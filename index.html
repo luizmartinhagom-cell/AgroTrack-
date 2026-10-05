@@ -43,7 +43,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 html{height:100%;overflow:hidden;-webkit-text-size-adjust:100%}
 body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--text);height:100%;overflow:hidden;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
-#app{display:flex;flex-direction:column;height:100%;width:100%;max-width:440px;margin:0 auto;position:relative;background:var(--bg)}
+#app{display:flex;flex-direction:column;height:100%;max-width:440px;margin:0 auto;position:relative;background:var(--bg)}
 .safe-top{height:var(--safe-t);background:var(--black);flex-shrink:0}
 .topbar{background:var(--black);height:52px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
 .logo{font-size:17px;font-weight:700;color:var(--white);letter-spacing:-.3px;display:flex;align-items:center;gap:8px}
@@ -274,49 +274,6 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 .card{background:var(--white);border-radius:var(--r);overflow:hidden;margin-bottom:8px;border:1px solid var(--border)}
 .li{display:flex;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid var(--border);cursor:pointer;-webkit-user-select:none;user-select:none}
 .li:last-child{border-bottom:none}.li:active{background:var(--gray-50)}
-.quick-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 16px 14px}
-.quick{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:10px 6px;font-size:11px;font-weight:700;color:var(--text);display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;font-family:inherit;min-height:60px}
-.quick span{font-size:20px}.quick:active{background:var(--gray-50)}
-.mot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
-.mot{border:1.5px solid var(--border);background:#fff;border-radius:10px;padding:9px 4px;font-size:11px;font-weight:700;color:var(--text2);display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;font-family:inherit;min-height:56px}
-.mot span{font-size:18px}.mot.on{border-color:var(--black);background:var(--black);color:#fff}
-.off-band{display:flex;align-items:center;gap:8px;padding:9px 14px;background:var(--amber-50);color:#92400E;font-size:12px;font-weight:700;border-bottom:1px solid var(--border);cursor:pointer}
-.reg-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;display:inline-block}
-.cor-b{width:30px;height:30px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px var(--border);cursor:pointer;flex-shrink:0}
-.cor-b.on{box-shadow:0 0 0 2px var(--black)}
-.dias-bar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--gray-100);margin:8px 0}
-.hm-top{padding:18px 16px 12px}
-.hm-date{font-size:12px;font-weight:600;color:var(--text3)}
-.hm-title{font-size:22px;font-weight:800;color:var(--text);letter-spacing:-.4px;margin-top:2px}
-.kpi3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 16px 12px}
-.kpi{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:12px 10px;cursor:pointer;text-align:left;font-family:inherit}
-.kpi:active{background:var(--gray-50)}
-.kpi-v{font-size:28px;font-weight:800;line-height:1;letter-spacing:-.8px;color:var(--text)}
-.kpi-l{font-size:11px;font-weight:600;color:var(--text2);margin-top:5px}
-.kpi.red{border-color:var(--red-100);background:var(--red-50)}.kpi.red .kpi-v{color:var(--red)}
-.kpi.grn .kpi-v{color:var(--green)}
-.hm-acts{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;padding:0 16px 16px}
-.hm-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:var(--r);border:1px solid var(--border);background:var(--white);font-size:14px;font-weight:700;color:var(--text);font-family:inherit;cursor:pointer}
-.hm-btn span{font-size:18px}.hm-btn.pri{background:var(--black);color:#fff;border-color:var(--black)}
-.hm-btn:active{opacity:.85}
-.hrow{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--border)}
-.hrow:last-child{border-bottom:none}
-.hrow .ht{font-size:13px;font-weight:800;color:var(--text);width:42px;flex-shrink:0}
-.hrow .hb{flex:1;min-width:0;cursor:pointer}
-.hrow .hn{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.hrow .hs{font-size:12px;color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
-.hrow .hs.red{color:var(--red);font-weight:600}.hrow .hs.amb{color:var(--amber);font-weight:600}
-.rbtn{width:40px;height:40px;border-radius:10px;border:1px solid var(--border);background:var(--white);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;font-family:inherit;color:var(--text)}
-.rbtn.ok{background:var(--green);border-color:var(--green);color:#fff;font-weight:800}
-.rbtn:active{opacity:.8}
-.hm-empty{padding:16px;font-size:13px;color:var(--text2);display:flex;align-items:center;justify-content:space-between;gap:10px}
-.hm-mes{margin:0 0 8px}
-.hm-mes summary{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;margin:0 16px 10px;background:var(--white);border:1px solid var(--border);border-radius:var(--r);font-size:13px;font-weight:700;color:var(--text);cursor:pointer}
-.hm-mes summary::-webkit-details-marker{display:none}
-.hm-chev{color:var(--text3);transition:transform .2s}.hm-mes[open] .hm-chev{transform:rotate(90deg)}
-.seg{display:flex;margin:12px 16px 4px;background:var(--gray-100);border-radius:10px;padding:3px}
-.seg button{flex:1;border:none;background:none;padding:8px;border-radius:8px;font-size:13px;font-weight:700;color:var(--text2);font-family:inherit;cursor:pointer}
-.seg button.on{background:var(--white);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.08)}
 </style>
 </head>
 <body>
@@ -335,7 +292,7 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 <div class="topbar">
   <div class="logo"><div class="logo-mark">🌱</div>Agro<em>Clientes</em></div>
   <div class="topbar-r">
-    <button class="iBtn" onclick="nav('historico',null)" title="Histórico">📋</button>
+    <button class="iBtn" onclick="nav('rotas',null)" title="Mapa e rotas">🗺️</button>
     <button class="iBtn" onclick="openReg()" title="Registrar visita">✓</button>
     <button class="iBtn" onclick="openSearch()">🔍</button>
   </div>
@@ -343,20 +300,21 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 <div class="content" id="content">
 <!-- DASHBOARD -->
 <div id="s-home" class="scr active">
-  <div class="hm-top"><div class="hm-date" id="hm-date"></div><div class="hm-title" id="hm-title"></div></div>
-  <div class="kpi3" id="hm-kpis"></div>
-  <div class="hm-acts">
-    <button class="hm-btn pri" onclick="openReg()"><span>✅</span>Registrar visita</button>
-    <button class="hm-btn" onclick="openOff()"><span>🏢</span>Dia sem campo</button>
+  <div class="dash-hero">
+    <div class="hero-date" id="hero-date"></div>
+    <div class="hero-greeting" id="hero-greeting"></div>
+    <div class="hero-sub" id="hero-sub"></div>
+    <div id="hero-alert"></div>
+    <div class="hero-big" id="hero-big"></div>
+    <div class="hero-metrics" id="hero-metrics"></div>
   </div>
-  <div class="sec"><span class="sec-t" id="hm-hoje-t">Hoje</span><span class="sec-a" onclick="nav('semana',null)">Semana ›</span></div>
-  <div class="card" style="margin:0 16px 16px" id="hm-hoje"></div>
-  <div class="sec"><span class="sec-t">Visitar logo</span><span class="sec-a" onclick="nav('rotas',null)">Montar roteiro ›</span></div>
-  <div class="card" style="margin:0 16px 16px" id="hm-fila"></div>
-  <details class="hm-mes" id="hm-mes"><summary><span id="hm-mes-sum">Resumo do mês</span><span class="hm-chev">›</span></summary>
-    <div class="qs-row" id="qs-row" style="padding-top:4px"></div>
-    <div class="card" style="margin:0 16px 16px" id="dash-dias"></div>
-  </details>
+  <div class="perf-strip" id="perf-strip"></div>
+  <div class="sec"><span class="sec-t">Mês atual</span></div>
+  <div class="qs-row" id="qs-row"></div>
+  <div class="sec"><span class="sec-t">Requerem atenção</span><span class="sec-a" onclick="nav('clientes',null)">Ver todos</span></div>
+  <div class="action-list" id="dash-atencao"></div>
+  <div class="sec"><span class="sec-t">Próximas visitas</span><span class="sec-a" onclick="nav('agenda',null)">Ver agenda</span></div>
+  <div class="action-list" id="dash-prox"></div>
   <div style="height:8px"></div>
 </div>
 <!-- CLIENTES -->
@@ -370,12 +328,10 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
     <button class="fp" data-f="late" onclick="setF(this)">Atrasados</button>
   </div>
   <input type="hidden" id="cf" value="">
-  <div style="padding:2px 16px 6px"><select id="c-reg-f" onchange="renderC()" style="width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:10px;font-size:13px;background:#fff;font-family:inherit"></select></div>
   <div class="card" style="margin:4px 16px 16px" id="lista-c"></div>
 </div>
 <!-- SEMANA -->
 <div id="s-semana" class="scr">
-  <div class="seg"><button class="on">Semana</button><button onclick="nav('agenda',null)">Lista</button></div>
   <div class="semana-nav">
     <button class="btn btn-g btn-sm" onclick="semOff(-1)">‹</button>
     <span class="semana-lbl" id="semana-lbl"></span>
@@ -387,7 +343,6 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 </div>
 <!-- AGENDA -->
 <div id="s-agenda" class="scr">
-  <div class="seg"><button onclick="nav('semana',null)">Semana</button><button class="on">Lista</button></div>
   <div class="fp-row">
     <button class="fp on" data-f="fut" onclick="setFA(this)">Próximas</button>
     <button class="fp" data-f="all" onclick="setFA(this)">Todas</button>
@@ -402,28 +357,16 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
   <input type="hidden" id="af" value="fut">
   <div id="lista-a" style="padding-top:4px"></div>
 </div>
-<!-- ROTAS / REGIÕES -->
+<!-- ROTAS -->
 <div id="s-rotas" class="scr">
   <div style="padding:16px 16px 10px">
-    <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:4px">Mapa, regiões e roteiro</div>
-    <div style="font-size:13px;color:var(--text3)">Cada ponto é uma fazenda. A cor é a região; a letra, a prioridade do cliente.</div>
+    <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:4px">Mapa de Clientes</div>
+    <div style="font-size:13px;color:var(--text3)">Clientes com coordenadas aparecem no mapa.</div>
   </div>
   <div class="map-wrap"><div id="map"></div></div>
-  <div class="sec"><span class="sec-t">Regiões</span><span class="sec-a" onclick="gerarRegioes()">⚙️ Gerar automático</span></div>
-  <div class="card" style="margin:0 16px 10px" id="reg-list"></div>
-  <div class="sec"><span class="sec-t">Montar roteiro</span></div>
-  <div class="card" style="margin:0 16px 10px;padding:14px 16px">
-    <div class="f"><label>Região</label><select id="rt-reg" onchange="rtPreview()"></select></div>
-    <div class="f"><label>Quem entra no roteiro</label><select id="rt-quem" onchange="rtPreview()"><option value="due">Atrasados + atenção (vencendo)</option><option value="late">Só atrasados</option><option value="all">Todos da região</option></select></div>
-    <div class="f2">
-      <div class="f"><label>Máx. de paradas</label><input id="rt-max" type="number" min="1" max="12" value="6" inputmode="numeric" onchange="rtPreview()"></div>
-      <div class="f"><label>Data do roteiro</label><input id="rt-dt" type="date"></div>
-    </div>
-    <div id="rt-prev" style="font-size:12px;color:var(--ink2);margin-bottom:10px"></div>
-    <button class="btn btn-p btn-full btn-sm" onclick="calcRota()">🛣️ Calcular roteiro pela estrada</button>
-  </div>
-  <div class="card" style="margin:0 16px 10px" id="rota-result"><div style="padding:16px;font-size:13px;color:var(--text3);text-align:center">Escolha a região e toque em Calcular. A rota sai e volta da sua base, pelas estradas.</div></div>
-  <div style="padding:14px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">Clientes sem fazenda localizada</div>
+  <div style="padding:0 16px 10px"><button class="btn btn-p btn-full btn-sm" onclick="calcRota()">Calcular Rota Otimizada</button></div>
+  <div class="card" style="margin:0 16px 10px" id="rota-result"><div style="padding:16px;font-size:13px;color:var(--text3);text-align:center">Toque em Calcular Rota para ver a sequência otimizada.</div></div>
+  <div style="padding:14px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">Sem localização</div>
   <div class="card" style="margin:0 16px 16px" id="sem-loc"></div>
 </div>
 <!-- HISTÓRICO -->
@@ -433,7 +376,6 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
     <button class="fp on" data-f="" onclick="setFH(this)">Todos</button>
     <button class="fp" data-f="realizada" onclick="setFH(this)">Realizadas</button>
     <button class="fp" data-f="cancelada" onclick="setFH(this)">Canceladas</button>
-    <button class="fp" data-f="off" onclick="setFH(this)">🏢 Sem campo</button>
   </div>
   <div class="date-filter">
     <label>De:</label><input type="date" id="hist-de" onchange="renderHist()">
@@ -445,42 +387,23 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 </div>
 <!-- MAIS -->
 <div id="s-mais" class="scr">
-  <div style="padding:16px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">Rotina</div>
-  <div class="card" style="margin:0 16px 12px">
-    <div class="mitem" onclick="nav('historico',null)"><div class="mico bl">📋</div><div class="mt"><strong>Histórico de visitas</strong><span>Realizadas, canceladas e dias sem campo</span></div><span style="color:var(--text3)">›</span></div>
-    <div class="mitem" onclick="openOff()"><div class="mico gr">🏢</div><div class="mt"><strong>Registrar dia sem campo</strong><span>Escritório, chuva, treinamento, reunião…</span></div><span style="color:var(--text3)">›</span></div>
-    <div class="mitem" onclick="nav('rotas',null)"><div class="mico bl">🗺️</div><div class="mt"><strong>Regiões e roteiros</strong><span>Agrupa fazendas por proximidade</span></div><span style="color:var(--text3)">›</span></div>
-  </div>
-  <div style="padding:16px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">Ponto de partida (base)</div>
-  <div class="card" style="margin:0 16px 12px;padding:14px 16px">
-    <div class="f"><label>Nome</label><input id="cfg-nome" type="text" placeholder="Caarapó – MS" onchange="saveCfgBase()"></div>
-    <div class="f2">
-      <div class="f"><label>Latitude</label><input id="cfg-lat" type="number" step="any" inputmode="decimal" onchange="saveCfgBase()"></div>
-      <div class="f"><label>Longitude</label><input id="cfg-lng" type="number" step="any" inputmode="decimal" onchange="saveCfgBase()"></div>
-    </div>
-    <div style="display:flex;gap:8px">
-      <button class="btn btn-g btn-sm" style="flex:1;font-size:12px" onclick="geoLoc('cfg-lat','cfg-lng')">📍 Estou aqui</button>
-      <button class="btn btn-g btn-sm" style="flex:1;font-size:12px" onclick="abrirMapaSelecao('cfg-lat','cfg-lng')">🗺️ No mapa</button>
-    </div>
-    <div style="font-size:11px;color:var(--ink2);margin-top:8px">Todos os km (distância, roteiro, ida e volta) são calculados pela estrada a partir deste ponto.</div>
-  </div>
   <div style="padding:16px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">Backup e Dados</div>
   <div id="backup-status"></div>
   <div class="card" style="margin:0 16px 12px">
     <div class="mitem" onclick="fazerBackup()"><div class="mico gr">💾</div><div class="mt"><strong>Fazer Backup</strong><span>Salva JSON com todos os dados</span></div><span style="color:var(--text3)">›</span></div>
     <div class="mitem" onclick="document.getElementById('inp-restore').click()"><div class="mico bl">📂</div><div class="mt"><strong>Restaurar Backup</strong><span>Importa arquivo JSON</span></div><span style="color:var(--text3)">›</span></div>
     <input type="file" id="inp-restore" accept=".json" style="display:none" onchange="restaurarBackup(event)">
-    <div class="mitem" onclick="exportarTudo()"><div class="mico gd">📊</div><div class="mt"><strong>Exportar Excel completo</strong><span>Clientes, fazendas, agenda, histórico e dias sem campo</span></div><span style="color:var(--text3)">›</span></div>
-    <div class="mitem" onclick="expC()"><div class="mico gr">👥</div><div class="mt"><strong>Exportar Clientes</strong><span>Com fazendas e área</span></div><span style="color:var(--text3)">›</span></div>
+    <div class="mitem" onclick="exportarTudo()"><div class="mico gd">📊</div><div class="mt"><strong>Exportar Excel completo</strong><span>Clientes + Agenda + Histórico</span></div><span style="color:var(--text3)">›</span></div>
+    <div class="mitem" onclick="expC()"><div class="mico gr">👥</div><div class="mt"><strong>Exportar Clientes</strong><span>Com propriedade e área</span></div><span style="color:var(--text3)">›</span></div>
     <div class="mitem" onclick="expH()"><div class="mico gd">📋</div><div class="mt"><strong>Exportar Histórico</strong><span>Visitas realizadas + km</span></div><span style="color:var(--text3)">›</span></div>
   </div>
   <div class="bi-box">
     <h3>Power BI</h3>
-    <p>Exporte o Excel, salve no OneDrive e conecte no Power BI Desktop pelas abas.</p>
+    <p>Exporte o Excel, salve no OneDrive e conecte no Power BI Desktop pelas 3 abas.</p>
     <div class="bi-steps">
       <div class="bi-step">1. Exportar Excel → OneDrive</div>
       <div class="bi-step">2. Power BI → Obter Dados → Excel</div>
-      <div class="bi-step">3. Relacionar Clientes[ID] ↔ Agenda / Histórico / Fazendas[id_cliente]</div>
+      <div class="bi-step">3. Relacionar Clientes[ID] ↔ Agenda[id_cliente]</div>
     </div>
   </div>
   <div style="padding:14px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">Resumo geral</div>
@@ -492,7 +415,7 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
   <div style="padding:0 16px 16px">
     <button class="btn btn-d btn-full btn-sm" onclick="if(confirm('Apagar todos os dados? Faça backup primeiro!'))limparDados()">Limpar todos os dados</button>
   </div>
-  <div style="text-align:center;padding:0 16px 24px;font-size:11px;color:var(--text3)">AgroClientes v4.2 · iOS & Android · Offline</div>
+  <div style="text-align:center;padding:0 16px 24px;font-size:11px;color:var(--text3)">AgroClientes v4.1 · iOS & Android · Offline</div>
 </div>
 <!-- DETALHE -->
 <div id="s-det" class="scr">
@@ -500,7 +423,7 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
   <div class="agrid" id="det-acts"></div>
   <div id="det-info"></div>
   <div id="det-weather" style="padding:0 16px 4px"></div>
-  <div style="padding:16px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">🏠 Fazendas</div>
+  <div style="padding:16px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">🏠 Outras propriedades</div>
   <div class="card" style="margin:0 16px 8px;overflow:hidden" id="det-props"></div>
   <div style="padding:16px 16px 6px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.6px">🗺️ Talhões da fazenda</div>
   <div class="card" style="margin:0 16px 8px;overflow:hidden" id="det-talhoes"></div>
@@ -516,8 +439,9 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 <nav class="bnav">
   <button class="ni active" id="ni-home" onclick="nav('home',this)"><span class="ni-ico">◈</span><span>Início</span></button>
   <button class="ni" id="ni-clientes" onclick="nav('clientes',this)"><span class="ni-ico">👥</span><span>Clientes</span></button>
-  <button class="ni" id="ni-agenda" onclick="nav('semana',this)"><span class="ni-ico">📅</span><span>Agenda</span><span class="nbadge" id="nbadge" style="display:none">0</span></button>
-  <button class="ni" id="ni-rotas" onclick="nav('rotas',this)"><span class="ni-ico">🗺️</span><span>Mapa</span></button>
+  <button class="ni" id="ni-semana" onclick="nav('semana',this)"><span class="ni-ico">📆</span><span>Semana</span></button>
+  <button class="ni" id="ni-agenda" onclick="nav('agenda',this)"><span class="ni-ico">📅</span><span>Agenda</span><span class="nbadge" id="nbadge" style="display:none">0</span></button>
+  <button class="ni" id="ni-historico" onclick="nav('historico',this)"><span class="ni-ico">📋</span><span>Histórico</span></button>
   <button class="ni" id="ni-mais" onclick="nav('mais',this)"><span class="ni-ico">···</span><span>Mais</span></button>
 </nav>
 <button class="fab" id="fab" onclick="fabAct()">＋</button>
@@ -530,6 +454,7 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 <div class="dbody">
 <div class="fsec">📋 Dados Pessoais</div>
 <div class="f"><label>Nome / Razão Social *</label><input id="c-n" type="text" placeholder="Ex.: João Silva" autocomplete="name"></div>
+<div class="f"><label>Propriedade / Fazenda</label><input id="c-prop" type="text" placeholder="Ex.: Fazenda São João"></div>
 <div class="f2">
   <div class="f"><label>Cidade *</label><input id="c-ci" type="text" placeholder="Sorriso – MT"></div>
   <div class="f"><label>Prioridade</label><select id="c-p"><option value="A">A – Alta</option><option value="B" selected>B – Média</option><option value="C">C – Baixa</option></select></div>
@@ -538,15 +463,27 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
   <div class="f"><label>Contato</label><input id="c-co" type="text" placeholder="Responsável"></div>
   <div class="f"><label>Telefone</label><input id="c-t" type="tel" placeholder="(65) 99999-9999" oninput="mT(this)" autocomplete="tel"></div>
 </div>
-<div class="fsec">🎯 Meta de visita (por cliente)</div>
-<div class="f"><label>Visitar a cada quantos dias?</label>
-<div style="display:flex;gap:8px;align-items:center"><input id="c-f" type="number" min="1" max="365" inputmode="numeric" value="30" style="width:90px;text-align:center;font-weight:700"><span style="font-size:12px;color:var(--ink2)">dias — vale para o cliente, em qualquer fazenda dele</span></div>
-<div class="fp-row" style="padding:8px 0 0" id="c-f-chips"></div>
+<div class="fsec">🌾 Propriedade Principal</div>
+<div style="font-size:11px;color:var(--ink2);margin:-6px 0 10px">Cliente com mais de uma fazenda? Cadastre esta como a principal e adicione as outras logo abaixo, antes de salvar.</div>
+<div class="f"><label>Localização da Fazenda</label><input id="c-loc" type="text" placeholder="Rod. MT-222, km 45"></div>
+<div class="f2">
+  <div class="f"><label>Área Plantada (ha)</label><input id="c-area" type="number" placeholder="0" min="0" inputmode="decimal"></div>
+  <div class="f"><label>Cultura Principal</label><select id="c-cult"><option value="">Selecione</option><option>Soja</option><option>Milho</option><option>Algodão</option><option>Cana</option><option>Trigo</option><option>Arroz</option><option>Pecuária</option><option>Misto</option></select></div>
 </div>
-<div class="fsec">🏠 Fazendas do cliente</div>
-<div style="font-size:11px;color:var(--ink2);margin:-6px 0 10px">Todas as fazendas têm o mesmo peso — o cliente não fica preso a nenhuma. Área total = soma das fazendas.</div>
+<div class="f2">
+  <div class="f"><label>Latitude</label><input id="c-lat" type="number" step="any" placeholder="-12.5432" inputmode="decimal" oninput="updateDistCad()"></div>
+  <div class="f"><label>Longitude</label><input id="c-lng" type="number" step="any" placeholder="-55.7201" inputmode="decimal" oninput="updateDistCad()"></div>
+</div>
+<div id="c-dist" style="font-size:12px;color:var(--ink2);margin:-8px 0 12px"></div>
+<div style="display:flex;gap:8px;margin-bottom:14px">
+  <button class="btn btn-g btn-sm" onclick="geoLoc()" style="font-size:12px;flex:1">📍 Localização atual</button>
+  <button class="btn btn-g btn-sm" onclick="abrirMapaSelecao()" style="font-size:12px;flex:1">🗺️ Selecionar no mapa</button>
+</div>
+<div class="fsec">🏠 Outras propriedades / fazendas</div>
+<div style="font-size:11px;color:var(--ink2);margin:-6px 0 10px">O total de área é a soma da propriedade principal com todas as fazendas abaixo — cada uma conta só uma vez.</div>
 <div class="card" id="c-props-list" style="margin-bottom:14px"></div>
-<div class="f"><label>Cultura principal do cliente</label><select id="c-cult"><option value="">Selecione</option><option>Soja</option><option>Milho</option><option>Algodão</option><option>Cana</option><option>Trigo</option><option>Arroz</option><option>Pecuária</option><option>Misto</option></select></div>
+<div class="fsec">⚙️ Visitas</div>
+<div class="f"><label>Frequência</label><select id="c-f"><option value="7">Semanal (7d)</option><option value="10">10 dias</option><option value="14">Quinzenal (14d)</option><option value="30" selected>Mensal (30d)</option><option value="45">45 dias</option><option value="60">Bimestral (60d)</option><option value="90">Trimestral (90d)</option></select></div>
 <div class="f"><label>Observações</label><div style="display:flex;gap:8px;align-items:flex-start"><textarea id="c-o" placeholder="Produtos, perfil, pendências…" style="flex:1"></textarea><button type="button" class="mic-btn" id="mic-c-o" onclick="voiceInput('c-o',this)" title="Ditar por voz">🎙️</button></div></div>
 <input type="hidden" id="c-id">
 <div class="brow"><button class="btn btn-p btn-full" onclick="saveC()">💾 Salvar Cliente</button><button class="btn btn-g" onclick="closeDW('dw-c')">Cancelar</button></div>
@@ -557,7 +494,7 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 <div class="dhandle"></div>
 <div class="dtitle"><span>Selecionar Localização</span><button class="iBtn" style="background:var(--line);color:var(--ink2)" onclick="closeDW('dw-mappick')">✕</button></div>
 <div class="dbody">
-<div style="font-size:12px;color:var(--ink2);margin-bottom:10px">Toque no mapa para marcar a localização da fazenda. Toque no ícone de camadas no canto superior direito do mapa para alternar entre mapa e <strong>🛰️ satélite</strong>. O mapa abre na sua base (ponto de partida).</div>
+<div style="font-size:12px;color:var(--ink2);margin-bottom:10px">Toque no mapa para marcar a localização da fazenda. Toque no ícone de camadas no canto superior direito do mapa para alternar entre mapa e <strong>🛰️ satélite</strong>. O ponto de partida é Caarapó – MS.</div>
 <div id="map-pick" style="height:320px;border-radius:12px;overflow:hidden;margin-bottom:10px;background:var(--gray-100)"></div>
 <div id="mappick-info" style="font-size:13px;color:var(--ink2);margin-bottom:14px">Toque no mapa para escolher o ponto.</div>
 <div class="brow"><button class="btn btn-p btn-full" onclick="confirmarMapaSelecao()">✅ Usar esta localização</button><button class="btn btn-g" onclick="closeDW('dw-mappick')">Cancelar</button></div>
@@ -615,15 +552,10 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
   <div class="f"><label>Cultura</label><select id="p2-cult"><option value="">Selecione</option><option>Soja</option><option>Milho</option><option>Algodão</option><option>Cana</option><option>Trigo</option><option>Arroz</option><option>Pecuária</option><option>Misto</option></select></div>
 </div>
 <div class="f2">
-  <div class="f"><label>Latitude</label><input id="p2-lat" type="number" step="any" placeholder="-22.6369" inputmode="decimal" onchange="updDistProp()"></div>
-  <div class="f"><label>Longitude</label><input id="p2-lng" type="number" step="any" placeholder="-54.8214" inputmode="decimal" onchange="updDistProp()"></div>
+  <div class="f"><label>Latitude</label><input id="p2-lat" type="number" step="any" placeholder="-12.5432" inputmode="decimal"></div>
+  <div class="f"><label>Longitude</label><input id="p2-lng" type="number" step="any" placeholder="-55.7201" inputmode="decimal"></div>
 </div>
-<div style="display:flex;gap:8px;margin-bottom:8px">
-  <button class="btn btn-g btn-sm" onclick="geoLoc('p2-lat','p2-lng')" style="font-size:12px;flex:1">📍 Estou aqui</button>
-  <button class="btn btn-g btn-sm" onclick="abrirMapaSelecao('p2-lat','p2-lng')" style="font-size:12px;flex:1">🗺️ Selecionar no mapa</button>
-</div>
-<div id="p2-dist" style="font-size:12px;color:var(--ink2);margin-bottom:12px"></div>
-<div class="f"><label>Região</label><select id="p2-reg"></select></div>
+<button class="btn btn-g btn-sm" onclick="abrirMapaSelecao('p2-lat','p2-lng')" style="margin-bottom:14px;font-size:12px">🗺️ Selecionar no mapa</button>
 <input type="hidden" id="p2-id"><input type="hidden" id="p2-cid"><input type="hidden" id="p2-mode" value="real">
 <button type="button" class="btn btn-g btn-full btn-sm" id="btn-del-prop" style="display:none;color:var(--red);border:1.5px solid var(--red);margin-bottom:10px" onclick="delPropFromForm()">🗑 Excluir propriedade</button>
 <div class="brow"><button class="btn btn-p btn-full" onclick="saveProp()">💾 Salvar Propriedade</button><button class="btn btn-g" onclick="closeDW('dw-prop')">Cancelar</button></div>
@@ -635,18 +567,16 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 <div class="dtitle"><span>Agendar Visita</span><button class="iBtn" style="background:var(--line);color:var(--ink2)" onclick="closeDW('dw-v')">✕</button></div>
 <div class="dbody">
 <div class="f"><label>Cliente *</label><select id="v-c" onchange="fillPropSelect('v-prop','v-c')"></select></div>
-<div class="f"><label>Fazenda (opcional)</label><select id="v-prop" onchange="autoKmV()"></select></div>
-<div id="v-warn" style="display:none;font-size:12px;font-weight:600;color:var(--amber);background:var(--amber-50);border-radius:8px;padding:8px 10px;margin-bottom:10px"></div>
+<div class="f"><label>Propriedade / Fazenda</label><select id="v-prop"></select></div>
 <div class="f2">
   <div class="f"><label>Data *</label><input id="v-d" type="date"></div>
   <div class="f"><label>Horário</label><input id="v-h" type="time" value="08:00"></div>
 </div>
 <div class="f"><label>Pauta / Objetivo</label><div style="display:flex;gap:8px;align-items:flex-start"><textarea id="v-o" placeholder="O que será abordado?" style="flex:1"></textarea><button type="button" class="mic-btn" id="mic-v-o" onclick="voiceInput('v-o',this)" title="Ditar por voz">🎙️</button></div></div>
 <div class="f2">
-  <div class="f"><label>Km estimado (ida e volta)</label><input id="v-km" type="number" placeholder="0" min="0" inputmode="decimal"></div>
+  <div class="f"><label>Km estimado</label><input id="v-km" type="number" placeholder="0" min="0" inputmode="decimal"></div>
   <div class="f"><label>Duração est. (h)</label><input id="v-dur" type="number" placeholder="2" min="0" step="0.5" inputmode="decimal"></div>
 </div>
-<div id="v-km-info" style="font-size:11px;color:var(--ink2);margin:-6px 0 12px"></div>
 <div class="brow"><button class="btn btn-p btn-full" onclick="saveV()">📅 Agendar</button><button class="btn btn-g" onclick="closeDW('dw-v')">Cancelar</button></div>
 </div></div></div>
 
@@ -656,7 +586,7 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 <div class="dtitle"><span>Registrar Visita</span><button class="iBtn" style="background:var(--line);color:var(--ink2)" onclick="closeDW('dw-r')">✕</button></div>
 <div class="dbody">
 <div class="f"><label>Cliente *</label><select id="r-c" onchange="fillPropSelect('r-prop','r-c')"></select></div>
-<div class="f"><label>Fazenda visitada (opcional)</label><select id="r-prop"></select></div>
+<div class="f"><label>Propriedade Visitada</label><select id="r-prop"></select></div>
 <div class="f2">
   <div class="f"><label>Data *</label><input id="r-d" type="date"></div>
   <div class="f"><label>Status</label><select id="r-s"><option value="realizada">✅ Realizada</option><option value="cancelada">❌ Cancelada</option></select></div>
@@ -664,8 +594,6 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 <div class="f">
   <button type="button" class="btn btn-track btn-full btn-sm" id="trk-btn" onclick="trkToggle()">🎯 Rastrear km por GPS</button>
   <div id="trk-lbl" style="display:none;text-align:center;font-size:12px;color:var(--ink2);margin-top:6px;font-weight:700"></div>
-  <button type="button" class="btn btn-g btn-full btn-sm" style="margin-top:8px" onclick="kmEstradaReg()">🛣️ Calcular km pela estrada (base → fazenda → base)</button>
-  <div id="r-km-info" style="font-size:11px;color:var(--ink2);margin-top:6px;text-align:center"></div>
 </div>
 <div class="f2">
   <div class="f"><label>Km rodados</label><input id="r-km" type="number" placeholder="0" min="0" inputmode="decimal"></div>
@@ -673,33 +601,6 @@ body{font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif;b
 </div>
 <div class="f"><label>Observações</label><div style="display:flex;gap:8px;align-items:flex-start"><textarea id="r-o" placeholder="Pedidos, pendências, próximos passos…" style="flex:1"></textarea><button type="button" class="mic-btn" id="mic-r-o" onclick="voiceInput('r-o',this)" title="Ditar por voz">🎙️</button></div></div>
 <div class="brow"><button class="btn btn-p btn-full" onclick="saveR()">✓ Registrar</button><button class="btn btn-g" onclick="closeDW('dw-r')">Cancelar</button></div>
-</div></div></div>
-
-<!-- DRAWER DIA SEM CAMPO -->
-<div class="ov" id="dw-off"><div class="drawer">
-<div class="dhandle"></div>
-<div class="dtitle"><span id="dw-off-t">Dia sem campo</span><button class="iBtn" style="background:var(--line);color:var(--ink2)" onclick="closeDW('dw-off')">✕</button></div>
-<div class="dbody">
-<div class="f"><label>Data *</label><input id="o-d" type="date" onchange="offCheckVisits()"></div>
-<div class="f"><label>Motivo *</label><div class="mot-grid" id="o-mot-grid"></div><input type="hidden" id="o-mot"></div>
-<div class="f"><label>Período</label><select id="o-per"><option value="int">Dia inteiro</option><option value="man">Só manhã</option><option value="tar">Só tarde</option></select></div>
-<div class="f"><label>Observação</label><div style="display:flex;gap:8px;align-items:flex-start"><textarea id="o-obs" placeholder="Ex.: chuva forte na região de Juti, treinamento Urtigão…" style="flex:1"></textarea><button type="button" class="mic-btn" id="mic-o-obs" onclick="voiceInput('o-obs',this)" title="Ditar por voz">🎙️</button></div></div>
-<div id="o-mv-box" style="display:none;background:var(--amber-50);border-radius:10px;padding:10px 12px;margin-bottom:12px;font-size:12px;color:var(--amber);font-weight:600"><label style="display:flex;gap:8px;align-items:flex-start;cursor:pointer"><input type="checkbox" id="o-mv" checked style="width:18px;height:18px;margin-top:1px"><span id="o-mv-txt"></span></label></div>
-<input type="hidden" id="o-id">
-<button type="button" class="btn btn-g btn-full btn-sm" id="btn-del-off" style="display:none;color:var(--red);border:1.5px solid var(--red);margin-bottom:10px" onclick="delOff()">🗑 Excluir registro</button>
-<div class="brow"><button class="btn btn-p btn-full" onclick="saveOff()">💾 Salvar</button><button class="btn btn-g" onclick="closeDW('dw-off')">Cancelar</button></div>
-</div></div></div>
-
-<!-- DRAWER REGIÃO -->
-<div class="ov" id="dw-reg"><div class="drawer">
-<div class="dhandle"></div>
-<div class="dtitle"><span>Editar região</span><button class="iBtn" style="background:var(--line);color:var(--ink2)" onclick="closeDW('dw-reg')">✕</button></div>
-<div class="dbody">
-<div class="f"><label>Nome da região *</label><input id="rg-nome" type="text" placeholder="Ex.: Juti / Naviraí"></div>
-<div class="f"><label>Cor</label><div class="fp-row" style="padding:0" id="rg-cores"></div><input type="hidden" id="rg-cor"></div>
-<input type="hidden" id="rg-id">
-<button type="button" class="btn btn-g btn-full btn-sm" style="color:var(--red);border:1.5px solid var(--red);margin-bottom:10px" onclick="delReg()">🗑 Excluir região (fazendas ficam sem região)</button>
-<div class="brow"><button class="btn btn-p btn-full" onclick="saveReg()">💾 Salvar</button><button class="btn btn-g" onclick="closeDW('dw-reg')">Cancelar</button></div>
 </div></div></div>
 
 <!-- DRAWER BUSCA -->
@@ -832,9 +733,6 @@ var CL=JSON.parse(localStorage.getItem('ac3_c')||'[]');
 var VS=JSON.parse(localStorage.getItem('ac3_v')||'[]');
 var HS=JSON.parse(localStorage.getItem('ac3_h')||'[]');
 var TL=JSON.parse(localStorage.getItem('ac3_t')||'[]');
-var OF=JSON.parse(localStorage.getItem('ac3_o')||'[]');   // dias sem campo
-var RG=JSON.parse(localStorage.getItem('ac3_rg')||'[]');  // regiões
-var CFG=JSON.parse(localStorage.getItem('ac3_cfg')||'{}'); // configurações (base)
 var curScr='home';
 var _semOff=0;
 var currentDetId=null;
@@ -844,9 +742,6 @@ function save(){
   localStorage.setItem('ac3_v',JSON.stringify(VS));
   localStorage.setItem('ac3_h',JSON.stringify(HS));
   localStorage.setItem('ac3_t',JSON.stringify(TL));
-  localStorage.setItem('ac3_o',JSON.stringify(OF));
-  localStorage.setItem('ac3_rg',JSON.stringify(RG));
-  localStorage.setItem('ac3_cfg',JSON.stringify(CFG));
   localStorage.setItem('ac3_lastSave',new Date().toISOString());
   updateBackupStatus();
 }
@@ -876,34 +771,6 @@ if(!CL.length){
   save();
 }
 
-// ── MIGRAÇÃO v4.2 ─────────────────────────────────────────────────────────
-// Antes, o cadastro tinha uma "propriedade principal" grudada no cliente.
-// Agora o cliente é só o cliente e TODAS as fazendas ficam na mesma lista
-// (props2), sem nenhuma ser a principal. A meta de visita (freq) é do cliente.
-function migrar42(){
-  var mudou=false;
-  CL.forEach(function(c){
-    if(c._m42)return;
-    var temPrincipal=(c.prop&&String(c.prop).trim())||c.loc||c.area||(c.lat!=null&&c.lng!=null);
-    if(temPrincipal){
-      var ps=c.props2||[];
-      var nome=(c.prop&&String(c.prop).trim())||'Propriedade principal';
-      var jaExiste=ps.some(function(p){return p.nome===nome;});
-      if(!jaExiste){
-        var novoId=ps.length?Math.max.apply(null,ps.map(function(p){return p.id||0;}))+1:1;
-        ps.unshift({id:novoId,nome:nome,loc:c.loc||'',area:c.area||0,cult:c.cult||'',lat:c.lat!=null?c.lat:null,lng:c.lng!=null?c.lng:null,reg:null});
-      }
-      c.props2=ps;
-    }
-    if(!c.props2)c.props2=[];
-    delete c.prop;delete c.loc;delete c.area;delete c.lat;delete c.lng;
-    c.freq=parseInt(c.freq)||30;
-    c._m42=true;mudou=true;
-  });
-  if(mudou)save();
-}
-migrar42();
-
 // ── UTILS ─────────────────────────────────────────────────────────────────
 var MESES=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
 var DIAS_S=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
@@ -912,22 +779,12 @@ var DNOMES=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
 function hoje(){return new Date().toISOString().slice(0,10);}
 function nid(a){return a.length?Math.max.apply(null,a.map(function(x){return x.id;}))+1:1;}
 function gC(id){return CL.find(function(c){return c.id==id;})||{};}
-// Área total do cliente = soma das fazendas, cada uma uma única vez
+// Área total do cliente = propriedade principal + cada propriedade adicional, uma única vez (sem duplicar)
 function clientAreaTotal(c){
   if(!c)return 0;
-  var t=0;
+  var t=c.area||0;
   (c.props2||[]).forEach(function(p){t+=p.area||0;});
   return t;
-}
-function farms(c){return (c&&c.props2)||[];}
-function farmsLoc(c){return farms(c).filter(function(p){return p.lat!=null&&p.lng!=null&&!isNaN(p.lat)&&!isNaN(p.lng);});}
-function farmByName(c,nome){return farms(c).find(function(p){return p.nome===nome;})||null;}
-function nFazTxt(c){var n=farms(c).length;return n?(n+' fazenda'+(n>1?'s':'')):'sem fazenda';}
-function proxVisita(c){if(!c.uv)return null;var d=new Date(c.uv+'T12:00:00');d.setDate(d.getDate()+(c.freq||30));return d.toISOString().slice(0,10);}
-function recalcUV(cid){
-  var c=CL.find(function(x){return x.id===cid;});if(!c)return;
-  var r=HS.filter(function(h){return h.cid===cid&&h.st==='realizada';}).map(function(h){return h.dt;}).sort();
-  c.uv=r.length?r[r.length-1]:(c.uv||null);
 }
 function dD(d){if(!d)return 9999;return Math.floor((new Date()-new Date(d))/86400000);}
 function fD(s){if(!s)return'—';var p=s.split('-');return p[2]+'/'+p[1];}
@@ -941,31 +798,30 @@ function popSel(id,val){
   var opts='<option value="">Selecione…</option>';
   var sorted=CL.slice().sort(function(a,b){return a.nome.localeCompare(b.nome);});
   sorted.forEach(function(c){
-    opts+='<option value="'+c.id+'">'+c.nome+(c.cidade?' – '+c.cidade:'')+'</option>';
+    opts+='<option value="'+c.id+'">'+(c.nome)+(c.prop?' – '+c.prop:'')+'</option>';
   });
   s.innerHTML=opts;
   if(val)s.value=val;
 }
-// Lista as fazendas do cliente (nenhuma é "principal")
+// Lista as propriedades do cliente (a principal do cadastro + adicionais) para escolher qual foi visitada
 function propList(cid){
-  return farms(gC(cid)).map(function(p){return p.nome;}).filter(function(n){return !!n;});
-}
-function _optsFaz(cid,selected,vazio){
-  var opts=propList(cid);
-  // Só pré-seleciona se o cliente tiver UMA fazenda; com várias, fica "não definida"
-  if(selected===undefined||selected===null)selected=opts.length===1?opts[0]:'';
-  var h='<option value="">'+(vazio||'— Não definida —')+'</option>';
-  h+=opts.map(function(o){var v=o.replace(/"/g,'&quot;');return '<option value="'+v+'"'+(o===selected?' selected':'')+'>'+o+'</option>';}).join('');
-  return h;
+  var c=gC(cid);
+  var list=[c.prop&&c.prop.trim()?c.prop.trim():'Propriedade principal'];
+  (c.props2||[]).forEach(function(p){if(p.nome)list.push(p.nome);});
+  return list;
 }
 function fillPropSelect(propSelId,clientSelId){
   var cid=parseInt(document.getElementById(clientSelId).value);
   var sel=document.getElementById(propSelId);
   if(!cid){sel.innerHTML='<option value="">—</option>';return;}
-  sel.innerHTML=_optsFaz(cid,null);
+  var opts=propList(cid);
+  sel.innerHTML=opts.map(function(o){return '<option value="'+o.replace(/"/g,'&quot;')+'">'+o+'</option>';}).join('');
 }
-function fillPropSelectDirect(propSelId,cid,selected,vazio){
-  document.getElementById(propSelId).innerHTML=_optsFaz(cid,selected||'',vazio);
+function fillPropSelectDirect(propSelId,cid,selected){
+  var sel=document.getElementById(propSelId);
+  var opts=propList(cid);
+  if(!selected||opts.indexOf(selected)<0)selected=opts[0];
+  sel.innerHTML=opts.map(function(o){return '<option value="'+o.replace(/"/g,'&quot;')+'"'+(o===selected?' selected':'')+'>'+o+'</option>';}).join('');
 }
 function dist(lat1,lng1,lat2,lng2){
   var R=6371,dL=(lat2-lat1)*Math.PI/180,dN=(lng2-lng1)*Math.PI/180;
@@ -995,9 +851,9 @@ function updateBackupStatus(){
 
 function fazerBackup(){
   var data={
-    versao:4,
+    versao:3,
     data:new Date().toISOString(),
-    clientes:CL,visitas:VS,historico:HS,talhoes:TL,semCampo:OF,regioes:RG,config:CFG
+    clientes:CL,visitas:VS,historico:HS,talhoes:TL
   };
   var json=JSON.stringify(data,null,2);
   var blob=new Blob([json],{type:'application/json'});
@@ -1021,9 +877,6 @@ function restaurarBackup(event){
       if(!data.clientes||!data.visitas||!data.historico){throw new Error('Formato inválido');}
       if(!confirm('Restaurar backup de '+fDFull(data.data.slice(0,10))+'?\nIsso substituirá todos os dados atuais.'))return;
       CL=data.clientes;VS=data.visitas;HS=data.historico;TL=data.talhoes||[];
-      OF=data.semCampo||[];RG=data.regioes||[];CFG=data.config||CFG;
-      if(CFG.base&&CFG.base.lat!=null){CAARAPO.lat=CFG.base.lat;CAARAPO.lng=CFG.base.lng;CAARAPO.nome=CFG.base.nome||'Base';}
-      migrar42();
       save();
       renderHome();renderC();updateBadge();
       toast('✅ Backup restaurado com sucesso!');
@@ -1042,7 +895,7 @@ function delAllClients(){
   if(!CL.length){toast('Não há clientes cadastrados');return;}
   if(!confirm('Excluir TODOS os '+CL.length+' clientes cadastrados e todo o histórico/agenda deles? Essa ação não pode ser desfeita. Faça backup primeiro se quiser guardar os dados atuais.'))return;
   if(!confirm('Confirmar de novo: apagar todos os clientes agora?'))return;
-  CL=[];VS=[];HS=[];TL=[];RG=[];
+  CL=[];VS=[];HS=[];TL=[];
   save();
   toast('🗑 Todos os clientes foram excluídos');
   renderHome();updateBadge();
@@ -1073,11 +926,10 @@ function nav(id,btn){
   document.querySelectorAll('.scr').forEach(function(s){s.classList.remove('active');});
   document.querySelectorAll('.ni').forEach(function(b){b.classList.remove('active');});
   document.getElementById('s-'+id).classList.add('active');
-  var TAB={semana:'agenda',agenda:'agenda',historico:'mais'};
-  var navBtn=document.getElementById('ni-'+(TAB[id]||id));
+  var navBtn=btn||document.getElementById('ni-'+id);
   if(navBtn)navBtn.classList.add('active');
   document.getElementById('content').scrollTop=0;
-  var hideFab=['mais','rotas','home'];
+  var hideFab=['mais','rotas'];
   document.getElementById('fab').style.display=hideFab.indexOf(id)>=0?'none':'';
   if(id==='home'){renderHome();}
   if(id==='clientes')renderC();
@@ -1097,7 +949,7 @@ function goDet(cid){
   document.getElementById('content').scrollTop=0;
 }
 function goBack(){nav('clientes',document.getElementById('ni-clientes'));}
-function fabAct(){if(curScr==='agenda'||curScr==='semana')openV();else if(curScr==='historico')openReg();else openC();}
+function fabAct(){if(curScr==='agenda'||curScr==='semana')openV();else openC();}
 function clearDateFilter(){
   document.getElementById('agenda-de').value='';
   document.getElementById('agenda-ate').value='';
@@ -1153,10 +1005,8 @@ function trkToggle(){
     var lat=p.coords.latitude,lng=p.coords.longitude;
     if(_trkLast){
       var d=dist(_trkLast.lat,_trkLast.lng,lat,lng);
-      // ignora ruído de GPS parado (<10m)
+      // ignora ruído de GPS parado (<10m) e saltos implausíveis (>5km entre leituras)
       if(d>0.01&&d<5)_trkKm+=d;
-      // salto grande = celular dormiu/perdeu sinal: soma o trecho pela estrada em vez de ignorar
-      else if(d>=5)roadKm(_trkLast,{lat:lat,lng:lng},function(km){_trkKm+=km;trkUpdateUI();});
     }
     _trkLast={lat:lat,lng:lng};
     trkUpdateUI();
@@ -1205,53 +1055,43 @@ document.querySelectorAll('.ov').forEach(function(o){
   o.addEventListener('click',function(e){if(e.target===o)o.classList.remove('open');});
 });
 
-var FREQS=[7,10,14,21,30,45,60,90];
-function renderFreqChips(){
-  var v=parseInt(document.getElementById('c-f').value)||0;
-  document.getElementById('c-f-chips').innerHTML=FREQS.map(function(f){return '<button type="button" class="fp'+(f===v?' on':'')+'" onclick="document.getElementById(\'c-f\').value='+f+';renderFreqChips()">'+f+'d</button>';}).join('');
-}
 function openC(cid){
   var c=cid?gC(cid):null;
   document.getElementById('dw-c-t').textContent=c?'Editar Cliente':'Novo Cliente';
-  ['c-id','c-n','c-ci','c-co','c-t','c-o','c-cult'].forEach(function(id){document.getElementById(id).value='';});
+  ['c-id','c-n','c-prop','c-ci','c-co','c-t','c-loc','c-area','c-lat','c-lng','c-o','c-cult'].forEach(function(id){document.getElementById(id).value='';});
   if(c){
     document.getElementById('c-id').value=c.id||'';
     document.getElementById('c-n').value=c.nome||'';
+    document.getElementById('c-prop').value=c.prop||'';
     document.getElementById('c-ci').value=c.cidade||'';
     document.getElementById('c-co').value=c.contato||'';
     document.getElementById('c-t').value=c.tel||'';
     document.getElementById('c-p').value=c.pri||'B';
     document.getElementById('c-f').value=c.freq||30;
+    document.getElementById('c-loc').value=c.loc||'';
+    document.getElementById('c-area').value=c.area||'';
     document.getElementById('c-cult').value=c.cult||'';
+    document.getElementById('c-lat').value=c.lat||'';
+    document.getElementById('c-lng').value=c.lng||'';
     document.getElementById('c-o').value=c.obs||'';
   } else {
     document.getElementById('c-p').value='B';
     document.getElementById('c-f').value=30;
   }
-  document.getElementById('c-f').oninput=renderFreqChips;
-  renderFreqChips();
   _cDraftMode=!c;
   _cDraftProps=[];
   renderCProps(c?c.id:null);
+  updateDistCad();
   openDW('dw-c');
 }
-function geoLoc(latId,lngId){
-  latId=latId||'p2-lat';lngId=lngId||'p2-lng';
+function geoLoc(){
   if(!navigator.geolocation){toast('GPS não disponível');return;}
   toast('📍 Obtendo localização…',6000);
   navigator.geolocation.getCurrentPosition(
-    function(p){
-      document.getElementById(latId).value=p.coords.latitude.toFixed(6);
-      document.getElementById(lngId).value=p.coords.longitude.toFixed(6);
-      toast('📍 Localização capturada!');afterPick(latId);
-    },
+    function(p){document.getElementById('c-lat').value=p.coords.latitude.toFixed(6);document.getElementById('c-lng').value=p.coords.longitude.toFixed(6);toast('📍 Localização capturada!');updateDistCad();},
     function(){toast('❌ Não foi possível obter localização');},
     {enableHighAccuracy:true,timeout:10000,maximumAge:0}
   );
-}
-function afterPick(latId){
-  if(latId==='p2-lat')updDistProp();
-  if(latId==='cfg-lat')saveCfgBase();
 }
 // ── Camadas de mapa (rua / satélite, sem chave de API) ───────────────────
 function addBaseLayers(map){
@@ -1261,86 +1101,18 @@ function addBaseLayers(map){
   return {rua:rua,sat:sat};
 }
 // ── Cidade sede e distância ─────────────────────────────────────────────
-var CAARAPO={lat:-22.6369,lng:-54.8214,nome:'Caarapó – MS'};
-if(CFG.base&&CFG.base.lat!=null){CAARAPO.lat=CFG.base.lat;CAARAPO.lng=CFG.base.lng;CAARAPO.nome=CFG.base.nome||'Base';}
-function baseNome(){return CAARAPO.nome||'base';}
-function saveCfgBase(){
-  var lat=parseFloat(document.getElementById('cfg-lat').value),lng=parseFloat(document.getElementById('cfg-lng').value);
-  if(isNaN(lat)||isNaN(lng)){toast('⚠️ Informe latitude e longitude da base');return;}
-  CAARAPO.lat=lat;CAARAPO.lng=lng;CAARAPO.nome=document.getElementById('cfg-nome').value.trim()||'Base';
-  CFG.base={lat:lat,lng:lng,nome:CAARAPO.nome};save();toast('🏠 Base atualizada');
-}
-function fillCfgBase(){
-  document.getElementById('cfg-nome').value=CAARAPO.nome||'';
-  document.getElementById('cfg-lat').value=CAARAPO.lat;
-  document.getElementById('cfg-lng').value=CAARAPO.lng;
-}
-
-// ── DISTÂNCIA PELA ESTRADA (OSRM / OpenStreetMap, sem chave) ─────────────
-// Antes o app usava linha reta (haversine), que dá bem menos que o real.
-// Agora consulta o roteador OSRM, que segue a malha viária igual ao Google
-// Maps. Resultados ficam em cache no aparelho (funcionam offline depois).
-// Sem internet e sem cache: estimativa = linha reta × 1,3 (marcada com ≈).
-var OSRM='https://router.project-osrm.org';
-var RC=JSON.parse(localStorage.getItem('ac3_rc')||'{}');
-function _rk(a,b){return [(+a.lat).toFixed(4),(+a.lng).toFixed(4),(+b.lat).toFixed(4),(+b.lng).toFixed(4)].join(',');}
-function roadCached(a,b){return RC[_rk(a,b)]||RC[_rk(b,a)]||null;}
-function saveRC(){
-  var ks=Object.keys(RC);
-  if(ks.length>3000){ks.slice(0,ks.length-2500).forEach(function(k){delete RC[k];});}
-  try{localStorage.setItem('ac3_rc',JSON.stringify(RC));}catch(e){}
-}
-var _rq=[],_rqBusy=false;
-function roadKm(a,b,cb){ // cb(km, ehEstrada, minutos)
-  var c=roadCached(a,b);
-  if(c){cb(c.km,true,c.min);return;}
-  if(!navigator.onLine){cb(dist(a.lat,a.lng,b.lat,b.lng)*1.3,false,null);return;}
-  _rq.push({a:a,b:b,cb:cb});_rqPump();
-}
-function _rqPump(){
-  if(_rqBusy||!_rq.length)return;
-  _rqBusy=true;
-  var j=_rq.shift();
-  var c=roadCached(j.a,j.b);
-  if(c){_rqBusy=false;j.cb(c.km,true,c.min);_rqPump();return;}
-  var fim=function(){setTimeout(function(){_rqBusy=false;_rqPump();},300);};
-  fetch(OSRM+'/route/v1/driving/'+j.a.lng+','+j.a.lat+';'+j.b.lng+','+j.b.lat+'?overview=false')
-    .then(function(r){return r.json();})
-    .then(function(d){
-      if(d&&d.code==='Ok'&&d.routes&&d.routes[0]){
-        var km=d.routes[0].distance/1000,min=d.routes[0].duration/60;
-        RC[_rk(j.a,j.b)]={km:Math.round(km*10)/10,min:Math.round(min)};saveRC();
-        j.cb(km,true,min);
-      } else j.cb(dist(j.a.lat,j.a.lng,j.b.lat,j.b.lng)*1.3,false,null);
-      fim();
-    })
-    .catch(function(){j.cb(dist(j.a.lat,j.a.lng,j.b.lat,j.b.lng)*1.3,false,null);fim();});
-}
-function fmtKm(km,ok){return (ok?'':'≈')+(km<10?km.toFixed(1):Math.round(km)).toString().replace('.',',')+' km';}
-// Span que se auto-preenche com a distância pela estrada até a base
-function rdSpan(lat,lng,suf){
-  if(lat==null||lng==null)return '';
-  return '<span class="rd" data-lat="'+lat+'" data-lng="'+lng+'" data-suf="'+(suf||'')+'">📏 ≈'+Math.round(dist(lat,lng,CAARAPO.lat,CAARAPO.lng)*1.3)+' km'+(suf||'')+'</span>';
-}
-function fillRoadDists(root){
-  var els=(root||document).querySelectorAll('.rd:not(.rd-ok)');
-  Array.prototype.forEach.call(els,function(el){
-    el.classList.add('rd-ok');
-    var lat=parseFloat(el.getAttribute('data-lat')),lng=parseFloat(el.getAttribute('data-lng'));
-    roadKm(CAARAPO,{lat:lat,lng:lng},function(km,ok){el.textContent=(ok?'🛣️ ':'📏 ')+fmtKm(km,ok)+el.getAttribute('data-suf');});
-  });
-}
-function updateDistCad(){}
-function updDistProp(){
-  var el=document.getElementById('p2-dist');if(!el)return;
-  var lat=parseFloat(document.getElementById('p2-lat').value),lng=parseFloat(document.getElementById('p2-lng').value);
+var CAARAPO={lat:-22.6369,lng:-54.8214};
+function updateDistCad(){
+  var el=document.getElementById('c-dist');if(!el)return;
+  var lat=parseFloat(document.getElementById('c-lat').value);
+  var lng=parseFloat(document.getElementById('c-lng').value);
   if(isNaN(lat)||isNaN(lng)){el.textContent='';return;}
-  el.innerHTML=rdSpan(lat,lng,' até '+baseNome()+' (pela estrada)');fillRoadDists(el);
+  el.textContent='📏 '+dist(lat,lng,CAARAPO.lat,CAARAPO.lng).toFixed(1)+' km de Caarapó – MS (sede)';
 }
 // ── Mapa de seleção de localização (cadastro) ────────────────────────────
-var mapPickInst=null,mapPickMarker=null,mapPickLatLng=null,mapPickTarget={lat:'p2-lat',lng:'p2-lng'};
+var mapPickInst=null,mapPickMarker=null,mapPickLatLng=null,mapPickTarget={lat:'c-lat',lng:'c-lng'};
 function abrirMapaSelecao(latId,lngId){
-  mapPickTarget={lat:latId||'p2-lat',lng:lngId||'p2-lng'};
+  mapPickTarget={lat:latId||'c-lat',lng:lngId||'c-lng'};
   openDW('dw-mappick');
   setTimeout(function(){
     if(!mapPickInst){
@@ -1370,13 +1142,13 @@ function setPickPoint(lat,lng,skipView){
   mapPickMarker=L.marker([lat,lng]).addTo(mapPickInst);
   if(!skipView)mapPickInst.panTo([lat,lng]);
   var dK=dist(lat,lng,CAARAPO.lat,CAARAPO.lng);
-  document.getElementById('mappick-info').innerHTML='📍 '+lat.toFixed(5)+', '+lng.toFixed(5)+'<br>📏 '+dK.toFixed(1)+' km em linha reta de '+baseNome()+' (pela estrada é mais)';
+  document.getElementById('mappick-info').innerHTML='📍 '+lat.toFixed(5)+', '+lng.toFixed(5)+'<br>📏 '+dK.toFixed(1)+' km de Caarapó – MS';
 }
 function confirmarMapaSelecao(){
   if(!mapPickLatLng){toast('⚠️ Toque no mapa para marcar a localização');return;}
   document.getElementById(mapPickTarget.lat).value=mapPickLatLng.lat.toFixed(6);
   document.getElementById(mapPickTarget.lng).value=mapPickLatLng.lng.toFixed(6);
-  afterPick(mapPickTarget.lat);
+  if(mapPickTarget.lat==='c-lat')updateDistCad();
   closeDW('dw-mappick');
   toast('📍 Localização definida');
 }
@@ -1398,11 +1170,11 @@ function openTalhao(cid,id){
     document.getElementById('t-lng').value=t.lng!=null?t.lng:'';
     document.getElementById('t-o').value=t.obs||'';
     document.getElementById('t-poly').value=t.poly?JSON.stringify(t.poly):'';
-    fillPropSelectDirect('t-prop',cid,t.prop||'','— Sem fazenda definida —');
+    fillPropSelectDirect('t-prop',cid,t.prop);
     document.getElementById('t-poly-info').textContent=talPolyInfoText(t);
   } else {
     ['t-nome','t-area','t-cult','t-lat','t-lng','t-o','t-poly'].forEach(function(fid){document.getElementById(fid).value='';});
-    fillPropSelectDirect('t-prop',cid,propList(cid).length===1?propList(cid)[0]:'','— Sem fazenda definida —');
+    fillPropSelectDirect('t-prop',cid,null);
     document.getElementById('t-poly-info').textContent='';
   }
   document.getElementById('btn-del-talhao').style.display=id?'block':'none';
@@ -1444,14 +1216,14 @@ function delTalhao(id,cid){
 }
 function renderTalhoes(cid){
   var el=document.getElementById('det-talhoes');if(!el)return;
-  var mainName='Sem fazenda definida';
+  var mainName=propList(cid)[0];
   var ts=TL.filter(function(t){return t.cid==cid;});
   if(!ts.length){
     el.innerHTML='<div style="padding:16px"><p style="font-size:13px;color:var(--text3);margin:0">Nenhum talhão cadastrado ainda.</p></div><div style="padding:10px 16px"><button class="btn btn-g btn-full btn-sm" onclick="openTalhao('+cid+')">＋ Adicionar Talhão</button></div>';
     return;
   }
   var itemHtml=function(t){
-    return '<div class="li" onclick="openTalhao('+cid+','+t.id+')"><div class="av" style="background:var(--green)">🌱</div><div class="lm"><div class="ln">'+t.nome+'</div><div class="ls">'+(t.cult||'—')+(t.area?' · '+t.area+' ha':'')+(t.poly&&t.poly.length>=3?' · 📐':'')+''+'</div></div><span class="chev">›</span></div>';
+    return '<div class="li" onclick="openTalhao('+cid+','+t.id+')"><div class="av" style="background:var(--green)">🌱</div><div class="lm"><div class="ln">'+t.nome+'</div><div class="ls">'+(t.cult||'—')+(t.area?' · '+t.area+' ha':'')+(t.poly&&t.poly.length>=3?' · 📐':'')+(t.lat!=null?' · '+dist(t.lat,t.lng,CAARAPO.lat,CAARAPO.lng).toFixed(1)+' km sede':'')+'</div></div><span class="chev">›</span></div>';
   };
   var groups={};
   ts.forEach(function(t){var k=t.prop||mainName;(groups[k]=groups[k]||[]).push(t);});
@@ -1620,26 +1392,23 @@ function aplicarPontosImportados(pts){
 }
 // ── Propriedades adicionais do cliente (além da propriedade principal) ───
 var _cDraftProps=[],_cDraftMode=false;
-function _fillPropForm(p){
-  document.getElementById('p2-nome').value=p.nome||'';
-  document.getElementById('p2-loc').value=p.loc||'';
-  document.getElementById('p2-area').value=p.area||'';
-  document.getElementById('p2-cult').value=p.cult||'';
-  document.getElementById('p2-lat').value=p.lat!=null?p.lat:'';
-  document.getElementById('p2-lng').value=p.lng!=null?p.lng:'';
-  var r=document.getElementById('p2-reg');
-  r.innerHTML='<option value="auto">🧭 Automática (pela localização)</option><option value="">Sem região</option>'+RG.map(function(g){return '<option value="'+g.id+'">'+g.nome+'</option>';}).join('');
-  r.value=(p.reg&&RG.some(function(g){return g.id===p.reg;}))?String(p.reg):(p.reg===0?'':'auto');
-  updDistProp();
-}
 function openProp(cid,id){
   document.getElementById('p2-mode').value='real';
   document.getElementById('p2-cid').value=cid;
   document.getElementById('p2-id').value=id||'';
-  document.getElementById('dw-prop-t').textContent=id?'Editar Fazenda':'Nova Fazenda';
+  document.getElementById('dw-prop-t').textContent=id?'Editar Propriedade':'Nova Propriedade';
   var c=gC(cid);
-  var p=id?((c.props2||[]).find(function(x){return x.id==id;})||{}):{};
-  _fillPropForm(p);
+  if(id){
+    var p=(c.props2||[]).find(function(x){return x.id==id;})||{};
+    document.getElementById('p2-nome').value=p.nome||'';
+    document.getElementById('p2-loc').value=p.loc||'';
+    document.getElementById('p2-area').value=p.area||'';
+    document.getElementById('p2-cult').value=p.cult||'';
+    document.getElementById('p2-lat').value=p.lat!=null?p.lat:'';
+    document.getElementById('p2-lng').value=p.lng!=null?p.lng:'';
+  } else {
+    ['p2-nome','p2-loc','p2-area','p2-cult','p2-lat','p2-lng'].forEach(function(fid){document.getElementById(fid).value='';});
+  }
   document.getElementById('btn-del-prop').style.display=id?'block':'none';
   openDW('dw-prop');
 }
@@ -1647,9 +1416,18 @@ function openPropDraft(id){
   document.getElementById('p2-mode').value='draft';
   document.getElementById('p2-cid').value='';
   document.getElementById('p2-id').value=id||'';
-  document.getElementById('dw-prop-t').textContent=id?'Editar Fazenda':'Nova Fazenda';
-  var p=id?(_cDraftProps.find(function(x){return x.id==id;})||{}):{};
-  _fillPropForm(p);
+  document.getElementById('dw-prop-t').textContent=id?'Editar Propriedade':'Nova Propriedade';
+  if(id){
+    var p=_cDraftProps.find(function(x){return x.id==id;})||{};
+    document.getElementById('p2-nome').value=p.nome||'';
+    document.getElementById('p2-loc').value=p.loc||'';
+    document.getElementById('p2-area').value=p.area||'';
+    document.getElementById('p2-cult').value=p.cult||'';
+    document.getElementById('p2-lat').value=p.lat!=null?p.lat:'';
+    document.getElementById('p2-lng').value=p.lng!=null?p.lng:'';
+  } else {
+    ['p2-nome','p2-loc','p2-area','p2-cult','p2-lat','p2-lng'].forEach(function(fid){document.getElementById(fid).value='';});
+  }
   document.getElementById('btn-del-prop').style.display=id?'block':'none';
   openDW('dw-prop');
 }
@@ -1671,7 +1449,7 @@ function delPropFromForm(){
 }
 function saveProp(){
   var nome=document.getElementById('p2-nome').value.trim();
-  if(!nome){toast('⚠️ Dê um nome à fazenda');return;}
+  if(!nome){toast('⚠️ Dê um nome à propriedade');return;}
   var id=document.getElementById('p2-id').value;
   var mode=document.getElementById('p2-mode').value;
   var obj={
@@ -1683,29 +1461,22 @@ function saveProp(){
     lng:parseFloat(document.getElementById('p2-lng').value)
   };
   if(isNaN(obj.lat))obj.lat=null;if(isNaN(obj.lng))obj.lng=null;
-  var rv=document.getElementById('p2-reg').value;
-  obj.reg=rv==='auto'?regiaoMaisProxima(obj):(rv?parseInt(rv):0);
-  var lista=mode==='draft'?_cDraftProps:null;
+  if(mode==='draft'){
+    if(id){var di=_cDraftProps.findIndex(function(p){return p.id==id;});_cDraftProps[di]=Object.assign({},_cDraftProps[di],obj);toast('✅ Propriedade atualizada');}
+    else{obj.id=nid(_cDraftProps);_cDraftProps.push(obj);toast('✅ Propriedade adicionada');}
+    closeDW('dw-prop');
+    renderCProps(null);
+    return;
+  }
   var cid=parseInt(document.getElementById('p2-cid').value);
-  var c=null;
-  if(mode!=='draft'){c=CL.find(function(x){return x.id===cid;});if(!c)return;if(!c.props2)c.props2=[];lista=c.props2;}
-  var dup=lista.some(function(p){return p.nome.toLowerCase()===nome.toLowerCase()&&String(p.id)!==String(id);});
-  if(dup){toast('⚠️ Já existe uma fazenda com esse nome neste cliente');return;}
-  if(id){
-    var i=lista.findIndex(function(p){return p.id==id;});
-    var antigo=lista[i].nome;
-    lista[i]=Object.assign({},lista[i],obj);
-    // renomeou: mantém agenda, histórico e talhões apontando para a fazenda certa
-    if(c&&antigo!==nome){
-      [VS,HS,TL].forEach(function(arr){arr.forEach(function(x){if(x.cid===cid&&x.prop===antigo)x.prop=nome;});});
-    }
-    toast('✅ Fazenda atualizada');
-  } else {obj.id=nid(lista);lista.push(obj);toast('✅ Fazenda adicionada');}
-  closeDW('dw-prop');
-  if(mode==='draft'){renderCProps(null);return;}
-  save();
-  renderProps(cid);renderCProps(cid);
-  if(curScr==='det')renderTalhoes(cid);
+  var c=CL.find(function(x){return x.id===cid;});
+  if(!c)return;
+  if(!c.props2)c.props2=[];
+  if(id){var i=c.props2.findIndex(function(p){return p.id==id;});c.props2[i]=Object.assign({},c.props2[i],obj);toast('✅ Propriedade atualizada');}
+  else{obj.id=nid(c.props2);c.props2.push(obj);toast('✅ Propriedade cadastrada');}
+  save();closeDW('dw-prop');
+  renderProps(cid);
+  renderCProps(cid);
 }
 function delProp(id,cid){
   if(!confirm('Excluir esta propriedade?'))return;
@@ -1716,22 +1487,22 @@ function delProp(id,cid){
 }
 function renderProps(cid){
   var el=document.getElementById('det-props');if(!el)return;
-  var ps=farms(gC(cid));
+  var c=gC(cid);
+  var ps=c.props2||[];
   el.innerHTML=(ps.length?ps.map(function(p){
-    var g=regById(p.reg);
-    return '<div class="li" onclick="openProp('+cid+','+p.id+')"><div class="av" style="background:'+(g?g.cor:'var(--green)')+'">🏠</div><div class="lm"><div class="ln">'+p.nome+'</div><div class="ls">'+(g?g.nome+' · ':'')+(p.cult||p.loc||'')+(p.area?' · '+p.area+' ha':'')+(p.lat!=null?' · '+rdSpan(p.lat,p.lng,''):' · sem localização')+'</div></div><span class="chev">›</span></div>';
-  }).join(''):'<div style="padding:16px"><p style="font-size:13px;color:var(--text3);margin:0">Nenhuma fazenda cadastrada para este cliente.</p></div>')
-  +'<div style="padding:10px 16px"><button class="btn btn-g btn-full btn-sm" onclick="openProp('+cid+')">＋ Adicionar fazenda</button></div>';
-  fillRoadDists(el);
+    return '<div class="li" onclick="openProp('+cid+','+p.id+')"><div class="av" style="background:var(--green)">🏠</div><div class="lm"><div class="ln">'+p.nome+'</div><div class="ls">'+(p.loc||p.cult||'—')+(p.area?' · '+p.area+' ha':'')+(p.lat!=null?' · '+dist(p.lat,p.lng,CAARAPO.lat,CAARAPO.lng).toFixed(1)+' km sede':'')+'</div></div><span class="chev">›</span></div>';
+  }).join(''):'<div style="padding:16px"><p style="font-size:13px;color:var(--text3);margin:0">Cliente tem apenas a propriedade principal do cadastro. Adicione mais fazendas aqui se ele tiver.</p></div>')
+  +'<div style="padding:10px 16px">'
+  +'<button class="btn btn-g btn-full btn-sm" onclick="openProp('+cid+')">＋ Adicionar Propriedade</button></div>';
 }
 function renderCProps(cid){
   var el=document.getElementById('c-props-list');if(!el)return;
-  var ps=cid?farms(gC(cid)):_cDraftProps;
+  var ps=cid?(gC(cid).props2||[]):_cDraftProps;
   el.innerHTML=(ps.length?ps.map(function(p){
-    return '<div class="li" onclick="'+(cid?('openProp('+cid+','+p.id+')'):('openPropDraft('+p.id+')'))+'"><div class="av" style="background:var(--green)">🏠</div><div class="lm"><div class="ln">'+p.nome+'</div><div class="ls">'+(p.loc||p.cult||'—')+(p.area?' · '+p.area+' ha':'')+(p.lat!=null?' · 📍':'')+'</div></div><span class="chev">›</span></div>';
-  }).join(''):'<div style="padding:14px 16px"><p style="font-size:12px;color:var(--text3);margin:0">Nenhuma fazenda ainda. Pode salvar o cliente sem fazenda e adicionar depois.</p></div>')
+    return '<div class="li" onclick="'+(cid?('openProp('+cid+','+p.id+')'):('openPropDraft('+p.id+')'))+'"><div class="av" style="background:var(--green)">🏠</div><div class="lm"><div class="ln">'+p.nome+'</div><div class="ls">'+(p.loc||p.cult||'—')+(p.area?' · '+p.area+' ha':'')+'</div></div><span class="chev">›</span></div>';
+  }).join(''):'<div style="padding:14px 16px"><p style="font-size:12px;color:var(--text3);margin:0">Nenhuma fazenda adicional ainda.</p></div>')
   +'<div style="padding:10px 16px">'
-  +'<button class="btn btn-g btn-full btn-sm" onclick="'+(cid?('openProp('+cid+')'):('openPropDraft()'))+'" style="font-size:12px">＋ Adicionar fazenda</button></div>';
+  +'<button class="btn btn-g btn-full btn-sm" onclick="'+(cid?('openProp('+cid+')'):('openPropDraft()'))+'" style="font-size:12px">＋ Adicionar outra fazenda</button></div>';
 }
 // ── Previsão do tempo (Open-Meteo, sem chave de API) ─────────────────────
 function wCodeInfo(code){
@@ -1762,23 +1533,25 @@ function saveC(){
   var nome=document.getElementById('c-n').value.trim();
   var cidade=document.getElementById('c-ci').value.trim();
   if(!nome||!cidade){toast('⚠️ Nome e cidade obrigatórios');return;}
-  var freq=parseInt(document.getElementById('c-f').value);
-  if(!freq||freq<1||freq>365){toast('⚠️ Meta de visita: informe de 1 a 365 dias');return;}
   var id=document.getElementById('c-id').value;
   var obj={
-    nome:nome,cidade:cidade,contato:document.getElementById('c-co').value.trim(),
+    nome:nome,prop:document.getElementById('c-prop').value.trim(),
+    cidade:cidade,contato:document.getElementById('c-co').value.trim(),
     tel:document.getElementById('c-t').value.trim(),
     pri:document.getElementById('c-p').value,
-    freq:freq,
+    freq:parseInt(document.getElementById('c-f').value),
+    loc:document.getElementById('c-loc').value.trim(),
+    area:parseFloat(document.getElementById('c-area').value)||0,
     cult:document.getElementById('c-cult').value,
+    lat:parseFloat(document.getElementById('c-lat').value)||null,
+    lng:parseFloat(document.getElementById('c-lng').value)||null,
     obs:document.getElementById('c-o').value.trim()
   };
   if(id){var i=CL.findIndex(function(c){return c.id==id;});CL[i]=Object.assign({},CL[i],obj);toast('✅ Cliente atualizado');}
-  else{obj.id=nid(CL);obj.uv=null;obj.props2=_cDraftProps;obj._m42=true;CL.push(obj);toast('✅ Cliente cadastrado');}
+  else{obj.id=nid(CL);obj.uv=null;obj.props2=_cDraftProps;CL.push(obj);toast('✅ Cliente cadastrado');}
   _cDraftProps=[];_cDraftMode=false;
   save();closeDW('dw-c');
   if(curScr==='clientes')renderC();
-  if(curScr==='det'&&id)renderDet(parseInt(id));
   renderHome();updateBadge();
 }
 function delC(id){
@@ -1792,60 +1565,17 @@ function delC(id){
 function openV(cid,dt){
   popSel('v-c',cid);
   fillPropSelect('v-prop','v-c');
-  document.getElementById('v-c').onchange=function(){fillPropSelect('v-prop','v-c');autoKmV();};
   document.getElementById('v-d').value=dt||hoje();
-  document.getElementById('v-d').onchange=checkOffV;
   document.getElementById('v-h').value='08:00';
   document.getElementById('v-o').value='';
   document.getElementById('v-km').value='';
-  document.getElementById('v-km').dataset.auto='';
-  document.getElementById('v-km').oninput=function(){this.dataset.auto='';};
-  document.getElementById('v-km-info').textContent='';
   document.getElementById('v-dur').value='2';
-  checkOffV();autoKmV();
   openDW('dw-v');
-}
-function checkOffV(){
-  var o=offOn(document.getElementById('v-d').value);
-  var w=document.getElementById('v-warn');
-  if(o){w.style.display='';w.textContent='⚠️ Este dia está marcado como sem campo ('+motInfo(o.mot).n+(o.per!=='int'?', '+PERS[o.per]:'')+').';}
-  else w.style.display='none';
-}
-// Km estimado ida e volta pela estrada, base → fazenda → base
-function _fazAlvo(cidSel,propSel){
-  var cid=parseInt(document.getElementById(cidSel).value);if(!cid)return null;
-  var c=gC(cid);var nome=document.getElementById(propSel).value;
-  var f=nome?farmByName(c,nome):null;
-  if(!f){var fl=farmsLoc(c);if(fl.length===1)f=fl[0];}
-  return (f&&f.lat!=null)?f:null;
-}
-function autoKmV(){
-  var kmEl=document.getElementById('v-km'),info=document.getElementById('v-km-info');
-  if(kmEl.value&&!kmEl.dataset.auto)return; // usuário digitou: não sobrescreve
-  var f=_fazAlvo('v-c','v-prop');
-  if(!f){info.textContent='';return;}
-  info.textContent='🛣️ Calculando pela estrada…';
-  roadKm(CAARAPO,f,function(km,ok){
-    kmEl.value=Math.round(km*2);kmEl.dataset.auto='1';
-    info.textContent=(ok?'🛣️ ':'📏 ')+'Ida e volta '+baseNome()+' ↔ '+f.nome+': '+fmtKm(km*2,ok)+(ok?' pela estrada':' (sem internet, estimado)');
-  });
-}
-function kmEstradaReg(){
-  var f=_fazAlvo('r-c','r-prop');
-  var info=document.getElementById('r-km-info');
-  if(!f){toast('⚠️ Escolha uma fazenda com localização cadastrada');return;}
-  info.textContent='🛣️ Calculando…';
-  roadKm(CAARAPO,f,function(km,ok){
-    document.getElementById('r-km').value=Math.round(km*2);
-    info.textContent=(ok?'🛣️ ':'📏 ')+'Ida e volta '+baseNome()+' ↔ '+f.nome+': '+fmtKm(km*2,ok);
-  });
 }
 function saveV(){
   var cid=parseInt(document.getElementById('v-c').value);
   var dt=document.getElementById('v-d').value;
   if(!cid||!dt){toast('⚠️ Selecione cliente e data');return;}
-  var off=offOn(dt);
-  if(off&&off.per==='int'&&!confirm('Este dia está marcado como sem campo ('+motInfo(off.mot).n+'). Agendar mesmo assim?'))return;
   VS.push({id:nid(VS),cid:cid,prop:document.getElementById('v-prop').value.trim(),dt:dt,hr:document.getElementById('v-h').value,obj:document.getElementById('v-o').value.trim(),km:parseFloat(document.getElementById('v-km').value)||0,dur:parseFloat(document.getElementById('v-dur').value)||2,st:'pend'});
   save();closeDW('dw-v');
   if(curScr==='agenda')renderA();
@@ -1860,7 +1590,8 @@ function confV(id){
   var v=VS.find(function(x){return x.id===id;});if(!v)return;
   v.st='done';
   HS.push({id:nid(HS),cid:v.cid,prop:v.prop,dt:v.dt,st:'realizada',km:v.km||0,dur:v.dur||0,obs:v.obj||''});
-  recalcUV(v.cid);
+  var c=CL.find(function(x){return x.id===v.cid;});
+  if(c&&(!c.uv||v.dt>c.uv))c.uv=v.dt;
   save();
   if(curScr==='agenda')renderA();
   if(curScr==='semana')renderSem();
@@ -1869,7 +1600,6 @@ function confV(id){
 function openReg(cid){
   popSel('r-c',cid);
   fillPropSelect('r-prop','r-c');
-  document.getElementById('r-km-info').textContent='';
   document.getElementById('r-d').value=hoje();
   document.getElementById('r-s').value='realizada';
   document.getElementById('r-o').value='';
@@ -1884,7 +1614,7 @@ function saveR(){
   var st=document.getElementById('r-s').value;
   if(!cid||!dt){toast('⚠️ Selecione cliente e data');return;}
   HS.push({id:nid(HS),cid:cid,prop:document.getElementById('r-prop').value.trim(),dt:dt,st:st,km:parseFloat(document.getElementById('r-km').value)||0,dur:parseFloat(document.getElementById('r-dur').value)||0,obs:document.getElementById('r-o').value.trim()});
-  if(st==='realizada')recalcUV(cid);
+  if(st==='realizada'){var c=CL.find(function(x){return x.id===cid;});if(c&&(!c.uv||dt>c.uv))c.uv=dt;}
   save();closeDW('dw-r');renderHome();
   if(curScr==='semana')renderSem();
   if(curScr==='historico')renderHist();
@@ -1900,71 +1630,50 @@ function renderS(){
   var q=document.getElementById('sq').value.toLowerCase().trim();
   var sr=document.getElementById('sr');
   if(!q){sr.innerHTML='';return;}
-  var f=CL.filter(function(c){return matchC(c,q);});
+  var f=CL.filter(function(c){return c.nome.toLowerCase().includes(q)||c.cidade.toLowerCase().includes(q)||(c.prop||'').toLowerCase().includes(q)||(c.contato||'').toLowerCase().includes(q);});
   if(!f.length){sr.innerHTML='<p style="color:var(--ink2);text-align:center;padding:20px;font-size:13px">Nenhum resultado</p>';return;}
   sr.innerHTML=f.map(function(c){
-    return '<div class="li" onclick="closeDW(\'dw-s\');goDet('+c.id+')"><div class="av '+c.pri+'">'+c.pri+'</div><div class="lm"><div class="ln">'+c.nome+'</div><div class="ls">'+c.cidade+' · '+nFazTxt(c)+'</div></div><span class="chev">›</span></div>';
+    return '<div class="li" onclick="closeDW(\'dw-s\');goDet('+c.id+')"><div class="av '+c.pri+'">'+c.pri+'</div><div class="lm"><div class="ln">'+c.nome+'</div><div class="ls">'+(c.prop||c.cidade)+'</div></div><span class="chev">›</span></div>';
   }).join('');
-}
-function matchC(c,q){
-  if(!q)return true;
-  if(c.nome.toLowerCase().indexOf(q)>=0||(c.cidade||'').toLowerCase().indexOf(q)>=0||(c.contato||'').toLowerCase().indexOf(q)>=0)return true;
-  return farms(c).some(function(p){return (p.nome||'').toLowerCase().indexOf(q)>=0;});
 }
 
 // ── HOME / GERENCIAL ──────────────────────────────────────────────────────
 function renderHome(){
-  var h=hoje();var now=new Date();var mes=now.getMonth();var ano=now.getFullYear();var hr=now.getHours();
+  var h=hoje();var now=new Date();var mes=now.getMonth();var ano=now.getFullYear();
+  var hr=now.getHours();
+  var MESES_=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
   var DIAS_=['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
-  document.getElementById('hm-date').textContent=DIAS_[now.getDay()]+', '+now.getDate()+' de '+MESES[mes];
-  document.getElementById('hm-title').textContent=hr<12?'Bom dia':hr<18?'Boa tarde':'Boa noite';
+  document.getElementById('hero-date').textContent=DIAS_[now.getDay()]+', '+now.getDate()+' de '+MESES_[mes];
+  var sauda=hr<12?'Bom dia.':hr<18?'Boa tarde.':'Boa noite.';
+  document.getElementById('hero-greeting').innerHTML=sauda;
   var late=CL.filter(function(c){return stC(c)==='late';});
-  var emDia=CL.length?Math.round(CL.filter(function(c){return stC(c)!=='late';}).length/CL.length*100):0;
-  var vh=VS.filter(function(v){return v.dt===h&&v.st==='pend';}).sort(function(a,b){return (a.hr||'')>(b.hr||'')?1:-1;});
-  // 3 números que importam no dia
-  document.getElementById('hm-kpis').innerHTML=
-    '<button class="kpi'+(late.length?' red':'')+'" onclick="verAtrasados()"><div class="kpi-v">'+late.length+'</div><div class="kpi-l">Atrasados</div></button>'+
-    '<button class="kpi" onclick="nav(\'semana\',null)"><div class="kpi-v">'+vh.length+'</div><div class="kpi-l">Visitas hoje</div></button>'+
-    '<button class="kpi grn" onclick="nav(\'clientes\',null)"><div class="kpi-v">'+emDia+'%</div><div class="kpi-l">Carteira em dia</div></button>';
-  // HOJE
-  var off=offOn(h);
-  document.getElementById('hm-hoje-t').textContent='Hoje'+(vh.length?' · '+vh.length+' visita'+(vh.length>1?'s':''):'');
-  var hj='';
-  if(off)hj+='<div class="off-band" onclick="openOff('+off.id+')"><span style="font-size:16px">'+motInfo(off.mot).i+'</span><span>Sem campo — '+motInfo(off.mot).n+(off.per!=='int'?' ('+PERS[off.per]+')':'')+'</span><span style="margin-left:auto">›</span></div>';
-  hj+=vh.map(function(v){
-    var c=gC(v.cid);var f=v.prop?farmByName(c,v.prop):null;if(!f){var fl=farmsLoc(c);f=fl.length?fl[0]:null;}
-    var nav_=f&&f.lat!=null?'<a class="rbtn" href="https://www.google.com/maps/dir/?api=1&destination='+f.lat+','+f.lng+'&travelmode=driving" target="_blank" title="Navegar">🧭</a>':'';
-    return '<div class="hrow"><div class="ht">'+(v.hr||'—')+'</div><div class="hb" onclick="goDet('+c.id+')"><div class="hn">'+c.nome+'</div><div class="hs">'+(v.prop||c.cidade||'')+(v.obj?' · '+v.obj:'')+'</div></div>'+nav_+'<button class="rbtn ok" onclick="confV('+v.id+')" title="Marcar realizada">✓</button></div>';
-  }).join('');
-  if(!vh.length&&!off)hj='<div class="hm-empty"><span>Nenhuma visita agendada para hoje.</span><button class="btn btn-g btn-sm" onclick="nav(\'rotas\',null)">Montar roteiro</button></div>';
-  else if(!vh.length)hj+='<div class="hm-empty"><span>Bom dia de escritório. Nenhuma visita hoje.</span></div>';
-  document.getElementById('hm-hoje').innerHTML=hj;
-  // VISITAR LOGO: atrasados + vencendo em até 7 dias, mais urgente primeiro
-  var agendados={};VS.forEach(function(v){if(v.st==='pend'&&v.dt>=h)agendados[v.cid]=v.dt;});
-  var fila=CL.map(function(c){var px=proxVisita(c);var falta=px?Math.round((new Date(px+'T12:00:00')-new Date(h+'T12:00:00'))/864e5):-999;return {c:c,falta:falta};})
-    .filter(function(x){return x.falta<=7;})
-    .sort(function(a,b){var o={A:0,B:1,C:2};return a.falta-b.falta||o[a.c.pri]-o[b.c.pri];});
-  var tot=fila.length;fila=fila.slice(0,6);
-  document.getElementById('hm-fila').innerHTML=fila.length?fila.map(function(x){
-    var c=x.c;var ag=agendados[c.id];
-    var txt=x.falta===-999?'Nunca visitado':x.falta<0?(-x.falta)+' dia'+(x.falta<-1?'s':'')+' de atraso':x.falta===0?'Vence hoje':'Vence em '+x.falta+' dia'+(x.falta>1?'s':'');
-    var cls=x.falta<0?'red':'amb';
-    var btn=ag?'<span class="chip plan" style="flex-shrink:0">📅 '+fD(ag)+'</span>':'<button class="rbtn" onclick="openV('+c.id+')" title="Agendar">📅</button>';
-    return '<div class="hrow"><div class="av '+c.pri+'" style="width:34px;height:34px;font-size:12px">'+c.pri+'</div><div class="hb" onclick="goDet('+c.id+')"><div class="hn">'+c.nome+'</div><div class="hs '+cls+'">'+txt+' · '+c.cidade+'</div></div>'+btn+'<button class="rbtn ok" onclick="openReg('+c.id+')" title="Registrar visita">✓</button></div>';
-  }).join('')+(tot>fila.length?'<div class="hm-empty" style="justify-content:center;cursor:pointer;color:var(--green);font-weight:700" onclick="verAtrasados()">Ver todos os '+tot+' ›</div>':'')
-  :'<div class="hm-empty"><span style="color:var(--green);font-weight:700">✓ Carteira em dia. Ninguém vence nos próximos 7 dias.</span></div>';
-  // RESUMO DO MÊS (recolhido)
-  var noMes=function(dt){var d=new Date(dt+'T12:00:00');return d.getMonth()===mes&&d.getFullYear()===ano;};
-  var real=HS.filter(function(x){return x.st==='realizada'&&noMes(x.dt);});
-  var kmMes=real.reduce(function(s2,x){return s2+(x.km||0);},0);
-  var areaTotal=CL.reduce(function(s2,c){return s2+clientAreaTotal(c);},0);
-  document.getElementById('hm-mes-sum').textContent='Mês: '+real.length+' visita'+(real.length!==1?'s':'')+' · '+Math.round(kmMes).toLocaleString('pt-BR')+' km';
-  document.getElementById('qs-row').innerHTML='<div class="qs"><div class="qs-val">'+real.length+'</div><div class="qs-lbl">Visitas</div></div><div class="qs"><div class="qs-val">'+Math.round(kmMes).toLocaleString('pt-BR')+'</div><div class="qs-lbl">Km</div></div><div class="qs"><div class="qs-val">'+(real.length?Math.round(kmMes/real.length):0)+'</div><div class="qs-lbl">Km/visita</div></div><div class="qs"><div class="qs-val">'+areaTotal.toLocaleString('pt-BR')+'</div><div class="qs-lbl">Hectares</div></div><div class="qs"><div class="qs-val">'+CL.length+'</div><div class="qs-lbl">Clientes</div></div>';
-  renderDias(mes,ano);
-}
-function verAtrasados(){
-  nav('clientes',null);
-  var b=document.querySelector('#s-clientes .fp[data-f="late"]');if(b)setF(b);
+  var warn_=CL.filter(function(c){return stC(c)==='warn';});
+  var ok_=CL.filter(function(c){return stC(c)==='ok';});
+  var vMesReal=HS.filter(function(x){var d=new Date(x.dt);return d.getMonth()===mes&&d.getFullYear()===ano&&x.st==='realizada';}).length;
+  var vMesPlan=VS.filter(function(x){var d=new Date(x.dt);return d.getMonth()===mes&&d.getFullYear()===ano;}).length;
+  var kmMes=HS.filter(function(x){var d=new Date(x.dt);return d.getMonth()===mes&&d.getFullYear()===ano&&x.st==='realizada';}).reduce(function(s,x){return s+(x.km||0);},0);
+  document.getElementById('hero-sub').textContent=CL.length+' clientes · '+MESES_[mes]+' de '+ano;
+  document.getElementById('hero-alert').innerHTML=late.length?'<div style="background:rgba(220,38,38,.15);border:1px solid rgba(220,38,38,.2);border-radius:8px;padding:8px 12px;margin-bottom:16px;font-size:12px;color:#FCA5A5;display:flex;align-items:center;gap:8px"><span>⚠</span><span>'+late.length+' cliente(s) com visita em atraso</span></div>':'';
+  var hoje2=hoje();
+  var visitasHoje=VS.filter(function(v){return v.dt===hoje2&&v.st==='pend';}).length;
+  var bigNum=late.length>0?late.length:visitasHoje;
+  var bigLabel=late.length>0?'atrasado'+(late.length!==1?'s':''):visitasHoje+' visita'+(visitasHoje!==1?'s':'')+' hoje';
+  var bigColor=late.length>0?'red':'';
+  var pct=vMesPlan>0?Math.min(100,Math.round(vMesReal/vMesPlan*100)):0;
+  document.getElementById('hero-big').innerHTML='<div class="big-num '+bigColor+'">'+bigNum+'</div><div class="big-context"><div class="big-label">'+bigLabel+'</div><div class="big-sublabel">'+pct+'% do mês cumprido</div></div>';
+  document.getElementById('hero-metrics').innerHTML='<div class="hm"><div class="hm-val g">'+ok_.length+'</div><div class="hm-lbl">Em dia</div></div><div class="hm"><div class="hm-val r">'+late.length+'</div><div class="hm-lbl">Atrasados</div></div><div class="hm"><div class="hm-val a">'+warn_.length+'</div><div class="hm-lbl">Atenção</div></div>';
+  var r_=22;var circ_=2*Math.PI*r_;var dash_=circ_*(pct/100);
+  var cor_=pct>=80?'var(--green)':pct>=50?'var(--amber)':'var(--red)';
+  var pA_=CL.filter(function(c){return c.pri==='A';});var pB_=CL.filter(function(c){return c.pri==='B';});var pC_=CL.filter(function(c){return c.pri==='C';});
+  var okA_=pA_.filter(function(c){return stC(c)==='ok';}).length;var okB_=pB_.filter(function(c){return stC(c)==='ok';}).length;var okC_=pC_.filter(function(c){return stC(c)==='ok';}).length;
+  document.getElementById('perf-strip').innerHTML='<div class="perf-ring"><svg viewBox="0 0 52 52"><circle class="pr-bg" cx="26" cy="26" r="'+r_+'"/><circle class="pr-fill" cx="26" cy="26" r="'+r_+'" stroke="'+cor_+'" stroke-dasharray="'+circ_+'" stroke-dashoffset="'+(circ_-dash_)+'"/></svg><div class="pr-label">'+pct+'%</div></div><div class="perf-info"><div class="perf-title">Visitas de '+MESES_[mes]+' — '+vMesReal+' de '+vMesPlan+'</div><div class="perf-bars"><div class="pbar"><div class="pbar-lbl">A</div><div class="pbar-track"><div class="pbar-fill" style="width:'+(pA_.length?okA_/pA_.length*100:0)+'%;background:var(--black)"></div></div><div class="pbar-val">'+okA_+'/'+pA_.length+'</div></div><div class="pbar"><div class="pbar-lbl">B</div><div class="pbar-track"><div class="pbar-fill" style="width:'+(pB_.length?okB_/pB_.length*100:0)+'%;background:var(--gray-500)"></div></div><div class="pbar-val">'+okB_+'/'+pB_.length+'</div></div><div class="pbar"><div class="pbar-lbl">C</div><div class="pbar-track"><div class="pbar-fill" style="width:'+(pC_.length?okC_/pC_.length*100:0)+'%;background:var(--gray-300)"></div></div><div class="pbar-val">'+okC_+'/'+pC_.length+'</div></div></div></div>';
+  var areaTotal=CL.reduce(function(s,c){return s+clientAreaTotal(c);},0);
+  document.getElementById('qs-row').innerHTML='<div class="qs"><div class="qs-val">'+vMesReal+'</div><div class="qs-lbl">Visitas</div></div><div class="qs"><div class="qs-val">'+kmMes+'</div><div class="qs-lbl">Km</div></div><div class="qs"><div class="qs-val">'+areaTotal.toLocaleString('pt-BR')+'</div><div class="qs-lbl">Hectares</div></div><div class="qs"><div class="qs-val">'+CL.length+'</div><div class="qs-lbl">Clientes</div></div>';
+  var atencao=CL.filter(function(c){return stC(c)==='late'||stC(c)==='warn';}).sort(function(a,b){return dD(a.uv)-dD(b.uv);}).slice(0,6);
+  document.getElementById('dash-atencao').innerHTML=atencao.length?atencao.map(function(c){var st2=stC(c);var dias_=dD(c.uv);var tag_=st2==='late'?(dias_-c.freq)+'d atraso':'Atenção';var tc=st2==='late'?'red':'amber';return '<div class="action-row" onclick="goDet('+c.id+')"><div class="ar-icon '+tc+'">'+c.pri+'</div><div class="ar-body"><div class="ar-name">'+c.nome+'</div><div class="ar-sub">'+(c.prop||c.cidade)+' · última: '+(fDFull(c.uv)||'nunca')+'</div></div><div class="ar-right"><span class="ar-tag '+tc+'">'+tag_+'</span></div></div>';}).join(''):'<div class="action-row"><div class="ar-body"><div class="ar-name" style="color:var(--green)">Todos em dia ✓</div><div class="ar-sub">Nenhum cliente com visita atrasada</div></div></div>';
+  var em7=new Date();em7.setDate(em7.getDate()+7);
+  var prox=VS.filter(function(v){var d=new Date(v.dt);return d>=new Date()&&d<=em7&&v.st==='pend';}).sort(function(a,b){return a.dt>b.dt?1:-1;}).slice(0,5);
+  document.getElementById('dash-prox').innerHTML=prox.length?prox.map(function(v){var c=gC(v.cid);var isHj=v.dt===h;return '<div class="action-row" onclick="goDet('+c.id+')"><div class="ar-icon '+(isHj?'green':'gray')+'">📅</div><div class="ar-body"><div class="ar-name">'+c.nome+'</div><div class="ar-sub">'+(v.prop||c.cidade)+' · '+v.hr+'</div></div><div class="ar-right"><span class="ar-tag '+(isHj?'green':'gray')+'">'+(isHj?'Hoje':fD(v.dt))+'</span></div></div>';}).join(''):'<div class="action-row"><div class="ar-body"><div class="ar-name" style="color:var(--text3)">Nenhuma visita nos próximos 7 dias</div></div></div>';
 }
 
 // ── CLIENTES ──────────────────────────────────────────────────────────────
@@ -1972,20 +1681,14 @@ function setF(btn){document.querySelectorAll('#s-clientes .fp').forEach(function
 function renderC(){
   var q=(document.getElementById('bq').value||'').toLowerCase();
   var f=document.getElementById('cf').value||'';
-  var rs=document.getElementById('c-reg-f');
-  var rsel=rs.value;
-  rs.innerHTML='<option value="">📍 Todas as regiões</option>'+RG.map(function(g){return '<option value="'+g.id+'">'+g.nome+'</option>';}).join('')+(RG.length?'<option value="0">Sem região</option>':'');
-  rs.style.display=RG.length?'':'none';
-  rs.value=rsel;
   var l=CL.filter(function(c){
+    var mq=!q||c.nome.toLowerCase().includes(q)||c.cidade.toLowerCase().includes(q)||(c.prop||'').toLowerCase().includes(q)||(c.contato||'').toLowerCase().includes(q);
     var mf=!f||(f==='late'?stC(c)==='late':c.pri===f);
-    var mr=!rsel||(rsel==='0'?!farms(c).some(function(p){return p.reg;}):farms(c).some(function(p){return String(p.reg)===rsel;}));
-    return matchC(c,q)&&mf&&mr;
+    return mq&&mf;
   }).sort(function(a,b){var o={A:0,B:1,C:2};return o[a.pri]-o[b.pri]||a.nome.localeCompare(b.nome);});
   var el=document.getElementById('lista-c');
   el.innerHTML=l.length?l.map(function(c){
-    var px=proxVisita(c);
-    return '<div class="li" onclick="goDet('+c.id+')"><div class="av '+c.pri+'">'+c.pri+'</div><div class="lm"><div class="ln">'+c.nome+'</div><div class="ls">'+c.cidade+' · '+nFazTxt(c)+' · a cada '+c.freq+'d'+(px?' · até '+fD(px):'')+'</div></div>'+chipSt(stC(c))+'<span class="chev">›</span></div>';
+    return '<div class="li" onclick="goDet('+c.id+')"><div class="av '+c.pri+'">'+c.pri+'</div><div class="lm"><div class="ln">'+c.nome+'</div><div class="ls">'+(c.prop||'—')+' · '+c.cidade+'</div></div>'+chipSt(stC(c))+'<span class="chev">›</span></div>';
   }).join(''):'<div class="empty"><div class="ei">👥</div><p>Nenhum cliente encontrado.</p></div>';
 }
 
@@ -1997,27 +1700,27 @@ function renderDet(id){
     '<div class="dh">'+
     '<button class="dbk" onclick="goBack()">‹ Clientes</button>'+
     '<div class="dname">'+c.nome+'</div>'+
-    '<div class="dsub">'+c.cidade+' · '+nFazTxt(c)+'</div>'+
+    '<div class="dsub">'+(c.prop||'—')+' · '+c.cidade+'</div>'+
     '<div class="dbadges">'+
     '<span class="badge gd">Prior. '+c.pri+'</span>'+
-    '<span class="badge">Meta: a cada '+c.freq+'d</span>'+
-    (proxVisita(c)?'<span class="badge">Próxima até '+fD(proxVisita(c))+'</span>':'')+
+    '<span class="badge">Freq: '+c.freq+'d</span>'+
     '<span class="badge" style="color:'+sc[st]+'">'+sl[st]+'</span>'+
     (clientAreaTotal(c)?'<span class="badge">'+clientAreaTotal(c).toLocaleString('pt-BR')+' ha total</span>':'')+
     (c.cult?'<span class="badge">'+c.cult+'</span>':'')+
     '</div></div>';
   var infoHtml='<div class="info-row">';
   if(c.tel)infoHtml+='<span class="info-tag">📞 '+c.tel+'</span>';
-  if(c.contato)infoHtml+='<span class="info-tag">👤 '+c.contato+'</span>';
-  infoHtml+='<span class="info-tag">'+(c.uv?'Última visita: '+fDFull(c.uv):'Nunca visitado')+'</span>';
+  if(c.loc)infoHtml+='<span class="info-tag">📍 '+c.loc+'</span>';
+  if(c.lat!=null)infoHtml+='<span class="info-tag">🌐 '+c.lat.toFixed(3)+', '+c.lng.toFixed(3)+'</span>';
+  if(c.lat!=null)infoHtml+='<span class="info-tag">📏 '+dist(c.lat,c.lng,CAARAPO.lat,CAARAPO.lng).toFixed(1)+' km de Caarapó – MS</span>';
   infoHtml+='</div>';
   if(c.obs)infoHtml+='<div style="padding:4px 16px 8px;font-size:13px;color:var(--ink2);line-height:1.5">'+c.obs+'</div>';
   document.getElementById('det-info').innerHTML=infoHtml;
 
   var acts='<button class="atile" onclick="openReg('+id+')"><span class="ti">✅</span><span class="tl">Registrar Visita</span><span class="ts">Marcar realizada</span></button>';
   acts+='<button class="atile" onclick="openV('+id+')"><span class="ti">📅</span><span class="tl">Agendar Visita</span><span class="ts">Nova visita</span></button>';
-  acts+='<button class="atile" onclick="openC('+id+')"><span class="ti">✏️</span><span class="tl">Editar Cadastro</span><span class="ts">Dados e meta</span></button>';
-  acts+='<button class="atile" onclick="openProp('+id+')"><span class="ti">🏠</span><span class="tl">Nova Fazenda</span><span class="ts">Adicionar área</span></button>';
+  acts+='<button class="atile" onclick="openC('+id+')"><span class="ti">✏️</span><span class="tl">Editar Cadastro</span><span class="ts">Dados e fazenda</span></button>';
+  acts+='<button class="atile" onclick="openProp('+id+')"><span class="ti">🏠</span><span class="tl">Nova Propriedade</span><span class="ts">Outra fazenda</span></button>';
   acts+='<button class="atile" onclick="openTalhao('+id+')"><span class="ti">🌱</span><span class="tl">Novo Talhão</span><span class="ts">Desenhar/importar área</span></button>';
   if(c.tel){
     acts+='<button class="atile" onclick="location.href=\'tel:'+c.tel+'\'"><span class="ti">📞</span><span class="tl">Ligar</span><span class="ts">'+c.tel+'</span></button>';
@@ -2027,7 +1730,7 @@ function renderDet(id){
   document.getElementById('det-acts').innerHTML=acts;
   renderProps(id);
   renderTalhoes(id);
-  var fl=farmsLoc(c);loadWeatherClient(fl.length?fl[0].lat:null,fl.length?fl[0].lng:null);
+  loadWeatherClient(c.lat,c.lng);
   renderDetHist(id);
 }
 function renderDetHist(id){
@@ -2069,7 +1772,7 @@ function renderSem(){
     '<div class="stat-card"><div class="sv" style="color:var(--blue)">'+vsem.length+'</div><div class="sl2">Planejadas</div></div>'+
     '<div class="stat-card"><div class="sv" style="color:var(--g5)">'+hsem.length+'</div><div class="sl2">Realizadas</div></div>'+
     '<div class="stat-card"><div class="sv" style="color:var(--gold)">'+kmSem+'</div><div class="sl2">Km est.</div></div>'+
-    '<div class="stat-card"><div class="sv" style="color:var(--amb)">'+OF.filter(function(o){return o.dt>=dias[0]&&o.dt<=dias[6];}).reduce(function(s2,o){return s2+(o.per==='int'?1:0.5);},0).toString().replace('.',',')+'</div><div class="sl2">Dias sem campo</div></div>';
+    '<div class="stat-card"><div class="sv" style="color:var(--amb)">'+durSem+'h</div><div class="sl2">Horas est.</div></div>';
   document.getElementById('sem-days').innerHTML=dias.map(function(dt,i){
     var vd=VS.filter(function(v){return v.dt===dt;}).sort(function(a,b){return a.hr>b.hr?1:-1;});
     var isH=dt===h;var isPast=dt<h;
@@ -2081,10 +1784,7 @@ function renderSem(){
       var kmSpan=v.km?'<span style="font-size:10px;color:var(--ink2)">'+v.km+'km</span>':'';
       return '<div class="pw-slot"><div class="av '+(c.pri||'C')+'" style="width:32px;height:32px;font-size:11px">'+(c.pri||'?')+'</div><div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+(c.nome||'—')+'</div><div style="font-size:11px;color:var(--ink2)">'+(v.hr||'—')+' · '+(v.prop||c.cidade||'')+'</div></div><div style="display:flex;flex-direction:column;gap:3px;align-items:flex-end">'+stChip+kmSpan+'</div></div>';
     }).join('');
-    var od=offOn(dt);
-    var offHtml=od?'<div class="off-band" onclick="openOff('+od.id+')"><span style="font-size:16px">'+motInfo(od.mot).i+'</span><span>Sem campo — '+motInfo(od.mot).n+(od.per!=='int'?' ('+PERS[od.per]+')':'')+(od.obs?' · '+od.obs:'')+'</span><span style="margin-left:auto">›</span></div>':'';
-    var addOff=od?'':'<div class="pw-add" style="border-left:1px solid var(--border)" onclick="openOff(null,\''+dt+'\')"><span style="font-size:15px">🏢</span><span>Sem campo</span></div>';
-    return '<div class="pw-card"><div class="pw-head '+headCls+'"><span class="pw-day-name">'+(isH?'🟡 ':'')+(od&&od.per==='int'?'🏢 ':'')+DNOMES[i]+'</span><span class="pw-day-date">'+fDFull(dt)+(vd.length?' · '+vd.length+'v':'')+(kmTot?' · '+kmTot+'km':'')+'</span></div><div class="pw-body">'+offHtml+slotsHtml+'<div style="display:flex"><div class="pw-add" style="flex:1" onclick="openV(null,\''+dt+'\')"><span style="font-size:18px;color:var(--g4)">＋</span><span>Visita</span></div>'+addOff+'</div></div></div>';
+    return '<div class="pw-card"><div class="pw-head '+headCls+'"><span class="pw-day-name">'+(isH?'🟡 ':'')+DNOMES[i]+'</span><span class="pw-day-date">'+fDFull(dt)+(vd.length?' · '+vd.length+'v':'')+(kmTot?' · '+kmTot+'km':'')+'</span></div><div class="pw-body">'+slotsHtml+'<div class="pw-add" onclick="openV(null,\''+dt+'\')"><span style="font-size:18px;color:var(--g4)">＋</span><span>Adicionar visita</span></div></div></div>';
   }).join('');
 }
 
@@ -2109,7 +1809,6 @@ function renderA(){
   el.innerHTML=Object.entries(gr).map(function(entry){
     var dt=entry[0];var vl=entry[1];
     var prefix=dt===h?'🟡 HOJE — ':dt<h?'⚠️ PASSADO — ':'';
-    var od=offOn(dt);if(od)prefix='🏢 '+motInfo(od.mot).n+' — '+prefix;
     var cardsHtml=vl.map(function(v){
       var c=gC(v.cid);
       var late=dt<h&&v.st==='pend';var isH2=dt===h;
@@ -2117,7 +1816,7 @@ function renderA(){
       var timeCls=late?'late':isH2?'today':v.st==='done'?'done':'def';
       var objHtml=v.obj?'<div style="padding:0 14px 8px;font-size:12px;color:var(--ink2)">'+v.obj+'</div>':'';
       var actBtn=v.st==='pend'?'<button class="btn btn-p btn-sm" onclick="confV('+v.id+')">✓ Realizada</button>':'<span class="chip done">Realizada</span>';
-      return '<div class="acard '+cardCls+'"><div class="acinner"><div class="atime '+timeCls+'">'+(v.hr||'—')+'</div><div class="ainfo"><div class="aname">'+(c.nome||'—')+'</div><div class="ameta">'+(v.prop?v.prop+' · ':'')+(c.cidade||'')+(v.km?' · '+v.km+'km':'')+'</div></div><div class="av '+(c.pri||'C')+'" style="width:26px;height:26px;font-size:10px">'+(c.pri||'?')+'</div></div>'+objHtml+'<div class="aacts">'+actBtn+'<button class="btn btn-g btn-sm" onclick="goDet('+c.id+')">Ver cliente</button><button class="btn btn-g btn-sm" onclick="if(confirm(\'Remover?\'))delV('+v.id+')" style="color:var(--red)">🗑</button></div></div>';
+      return '<div class="acard '+cardCls+'"><div class="acinner"><div class="atime '+timeCls+'">'+(v.hr||'—')+'</div><div class="ainfo"><div class="aname">'+(c.nome||'—')+'</div><div class="ameta">'+(v.prop||c.prop||'')+' · '+(c.cidade||'')+(v.km?' · '+v.km+'km':'')+'</div></div><div class="av '+(c.pri||'C')+'" style="width:26px;height:26px;font-size:10px">'+(c.pri||'?')+'</div></div>'+objHtml+'<div class="aacts">'+actBtn+'<button class="btn btn-g btn-sm" onclick="goDet('+c.id+')">Ver cliente</button><button class="btn btn-g btn-sm" onclick="if(confirm(\'Remover?\'))delV('+v.id+')" style="color:var(--red)">🗑</button></div></div>';
     }).join('');
     return '<div class="adh">'+prefix+fDFull(dt)+'</div>'+cardsHtml;
   }).join('');
@@ -2130,7 +1829,6 @@ function renderHist(){
   var f=document.getElementById('hf').value||'';
   var de=document.getElementById('hist-de').value;
   var ate=document.getElementById('hist-ate').value;
-  if(f==='off'){renderHistOff(q,de,ate);return;}
   var l=HS.filter(function(h){
     var c=gC(h.cid);
     var mq=!q||(c.nome||'').toLowerCase().includes(q)||(h.obs||'').toLowerCase().includes(q)||(h.prop||'').toLowerCase().includes(q);
@@ -2156,357 +1854,72 @@ function renderHist(){
 }
 
 // ── ROTAS ─────────────────────────────────────────────────────────────────
-
-
-// ── DIAS SEM CAMPO (escritório, chuva, treinamento…) ─────────────────────
-var MOTIVOS=[
-  {k:'escritorio',i:'🏢',n:'Escritório'},
-  {k:'chuva',i:'🌧️',n:'Chuva'},
-  {k:'entregas',i:'📦',n:'Organizar entregas'},
-  {k:'reuniao',i:'🤝',n:'Reunião'},
-  {k:'treinamento',i:'🎓',n:'Treinamento'},
-  {k:'pessoal',i:'👤',n:'Pessoal'},
-  {k:'feriado',i:'📅',n:'Feriado / folga'},
-  {k:'veiculo',i:'🔧',n:'Veículo / manutenção'},
-  {k:'outro',i:'✏️',n:'Outro'}
-];
-var PERS={int:'dia inteiro',man:'manhã',tar:'tarde'};
-function motInfo(k){return MOTIVOS.find(function(m){return m.k===k;})||MOTIVOS[MOTIVOS.length-1];}
-function offOn(dt){return OF.find(function(o){return o.dt===dt;})||null;}
-function setMot(k){
-  document.getElementById('o-mot').value=k;
-  Array.prototype.forEach.call(document.querySelectorAll('#o-mot-grid .mot'),function(b){b.classList.toggle('on',b.getAttribute('data-k')===k);});
-}
-function openOff(id,dt){
-  var o=id?OF.find(function(x){return x.id===id;}):null;
-  document.getElementById('dw-off-t').textContent=o?'Editar dia sem campo':'Dia sem campo';
-  document.getElementById('o-mot-grid').innerHTML=MOTIVOS.map(function(m){return '<button type="button" class="mot" data-k="'+m.k+'" onclick="setMot(\''+m.k+'\')"><span>'+m.i+'</span>'+m.n+'</button>';}).join('');
-  document.getElementById('o-id').value=o?o.id:'';
-  document.getElementById('o-d').value=o?o.dt:(dt||hoje());
-  document.getElementById('o-per').value=o?o.per:'int';
-  document.getElementById('o-obs').value=o?(o.obs||''):'';
-  setMot(o?o.mot:'escritorio');
-  document.getElementById('btn-del-off').style.display=o?'block':'none';
-  offCheckVisits();
-  openDW('dw-off');
-}
-function proxDiaLivre(dt){
-  var d=new Date(dt+'T12:00:00');
-  for(var i=0;i<30;i++){
-    d.setDate(d.getDate()+1);
-    var s=d.toISOString().slice(0,10);
-    var o=offOn(s);
-    if(d.getDay()!==0&&!(o&&o.per==='int'))return s;
-  }
-  return null;
-}
-function offCheckVisits(){
-  var dt=document.getElementById('o-d').value;
-  var pend=VS.filter(function(v){return v.dt===dt&&v.st==='pend';});
-  var box=document.getElementById('o-mv-box');
-  if(!pend.length){box.style.display='none';return;}
-  var nx=proxDiaLivre(dt);
-  box.style.display='';
-  document.getElementById('o-mv-txt').textContent='Há '+pend.length+' visita(s) agendada(s) neste dia. Remarcar para '+(nx?fDFull(nx):'o próximo dia livre')+'? (só se for dia inteiro)';
-}
-function saveOff(){
-  var dt=document.getElementById('o-d').value;
-  var mot=document.getElementById('o-mot').value;
-  if(!dt||!mot){toast('⚠️ Informe data e motivo');return;}
-  var id=parseInt(document.getElementById('o-id').value)||null;
-  var obj={dt:dt,mot:mot,per:document.getElementById('o-per').value,obs:document.getElementById('o-obs').value.trim()};
-  var outro=offOn(dt);
-  if(outro&&outro.id!==id){
-    if(!confirm('Já existe registro sem campo em '+fDFull(dt)+' ('+motInfo(outro.mot).n+'). Substituir?'))return;
-    OF=OF.filter(function(o){return o.id!==outro.id;});
-  }
-  if(id){var i=OF.findIndex(function(o){return o.id===id;});OF[i]=Object.assign({},OF[i],obj);}
-  else{obj.id=nid(OF);OF.push(obj);}
-  var mv=0;
-  if(obj.per==='int'&&document.getElementById('o-mv-box').style.display!=='none'&&document.getElementById('o-mv').checked){
-    var nx=proxDiaLivre(dt);
-    if(nx)VS.forEach(function(v){if(v.dt===dt&&v.st==='pend'){v.dt=nx;mv++;}});
-  }
-  save();closeDW('dw-off');
-  toast(motInfo(mot).i+' Dia sem campo salvo'+(mv?' · '+mv+' visita(s) remarcada(s)':''));
-  if(curScr==='semana')renderSem();
-  if(curScr==='agenda')renderA();
-  if(curScr==='historico')renderHist();
-  renderHome();updateBadge();
-}
-function delOff(){
-  var id=parseInt(document.getElementById('o-id').value);
-  if(!id||!confirm('Excluir este registro?'))return;
-  OF=OF.filter(function(o){return o.id!==id;});
-  save();closeDW('dw-off');toast('🗑 Registro excluído');
-  if(curScr==='semana')renderSem();
-  if(curScr==='historico')renderHist();
-  renderHome();
-}
-function renderHistOff(q,de,ate){
-  var l=OF.filter(function(o){
-    if(de&&o.dt<de)return false;if(ate&&o.dt>ate)return false;
-    if(q&&(motInfo(o.mot).n+' '+(o.obs||'')).toLowerCase().indexOf(q)<0)return false;
-    return true;
-  }).sort(function(a,b){return a.dt<b.dt?1:-1;});
-  var el=document.getElementById('lista-hist');
-  if(!l.length){el.innerHTML='<div class="empty"><div class="ei">🏢</div><p>Nenhum dia sem campo no período.</p></div>';return;}
-  el.innerHTML=l.map(function(o){
-    var m=motInfo(o.mot);
-    return '<div class="li" onclick="openOff('+o.id+')"><div class="av" style="background:var(--amber)">'+m.i+'</div><div class="lm"><div class="ln">'+m.n+'</div><div class="ls">'+fDFull(o.dt)+' · '+PERS[o.per]+(o.obs?' · '+o.obs:'')+'</div></div><span class="chev">›</span></div>';
-  }).join('');
-}
-// Painel: dias em campo × dias sem campo no mês
-function renderDias(mes,ano){
-  var el=document.getElementById('dash-dias');if(!el)return;
-  var noMes=function(dt){var d=new Date(dt+'T12:00:00');return d.getMonth()===mes&&d.getFullYear()===ano;};
-  var campo={};HS.forEach(function(h){if(h.st==='realizada'&&noMes(h.dt))campo[h.dt]=1;});
-  var nCampo=Object.keys(campo).length;
-  var offs=OF.filter(function(o){return noMes(o.dt);});
-  var nOff=offs.reduce(function(s,o){return s+(o.per==='int'?1:0.5);},0);
-  var porMot={};offs.forEach(function(o){porMot[o.mot]=(porMot[o.mot]||0)+(o.per==='int'?1:0.5);});
-  var tot=nCampo+nOff;var pc=tot?Math.round(nCampo/tot*100):0;
-  var motHtml=Object.keys(porMot).sort(function(a,b){return porMot[b]-porMot[a];}).map(function(k){var m=motInfo(k);return '<span class="info-tag" style="margin:0 6px 6px 0;display:inline-block">'+m.i+' '+m.n+': '+String(porMot[k]).replace('.',',')+'</span>';}).join('');
-  el.innerHTML='<div style="padding:14px 16px">'+
-    '<div style="display:flex;justify-content:space-between;font-size:13px;font-weight:700"><span>🚜 '+nCampo+' em campo</span><span>🏢 '+String(nOff).replace('.',',')+' sem campo</span></div>'+
-    '<div class="dias-bar"><div style="width:'+pc+'%;background:var(--green)"></div><div style="flex:1;background:var(--amber-100)"></div></div>'+
-    '<div style="font-size:11px;color:var(--ink2);margin-bottom:8px">'+(tot?pc+'% dos dias registrados foram em campo':'Registre visitas e dias sem campo para ver o resumo')+'</div>'+
-    motHtml+'</div>';
-}
-
-// ── REGIÕES ───────────────────────────────────────────────────────────────
-// Agrupa as fazendas por proximidade (agrupamento hierárquico, ligação
-// completa): duas fazendas da mesma região nunca ficam a mais de 2×raio.
-var CORES_RG=['#16A34A','#2563EB','#D97706','#7C3AED','#DC2626','#0891B2','#DB2777','#65A30D','#EA580C','#475569','#0D9488','#A16207'];
-function regById(id){return id?RG.find(function(g){return g.id===id;})||null:null;}
-function todasFazLoc(){
-  var r=[];CL.forEach(function(c){farmsLoc(c).forEach(function(p){r.push({c:c,p:p});});});return r;
-}
-function regCentro(id){
-  var fs=todasFazLoc().filter(function(x){return x.p.reg===id;});
-  if(!fs.length)return null;
-  return {lat:fs.reduce(function(s,x){return s+x.p.lat;},0)/fs.length,lng:fs.reduce(function(s,x){return s+x.p.lng;},0)/fs.length};
-}
-function regiaoMaisProxima(p){
-  if(p.lat==null||!RG.length)return null;
-  var best=null,bd=Infinity,lim=(CFG.raio||25)*2;
-  RG.forEach(function(g){var ct=regCentro(g.id);if(!ct)return;var d=dist(p.lat,p.lng,ct.lat,ct.lng);if(d<bd){bd=d;best=g.id;}});
-  return bd<=lim?best:null;
-}
-function rumo(lat,lng){
-  var dy=lat-CAARAPO.lat,dx=(lng-CAARAPO.lng)*Math.cos(CAARAPO.lat*Math.PI/180);
-  if(Math.sqrt(dx*dx+dy*dy)<0.08)return 'Base';
-  var a=(Math.atan2(dx,dy)*180/Math.PI+360)%360;
-  return ['Norte','Nordeste','Leste','Sudeste','Sul','Sudoeste','Oeste','Noroeste'][Math.round(a/45)%8];
-}
-function gerarRegioes(){
-  var fs=todasFazLoc();
-  if(fs.length<2){toast('⚠️ Cadastre a localização de pelo menos 2 fazendas');return;}
-  var raio=prompt('Raio máximo de cada região, em km (fazendas da mesma região ficam a no máximo o dobro disso entre si).\nSugestão: 25',String(CFG.raio||25));
-  if(raio===null)return;
-  raio=parseFloat(String(raio).replace(',','.'));
-  if(!raio||raio<2){toast('⚠️ Raio inválido');return;}
-  if(RG.length&&!confirm('Isso refaz todas as regiões (nomes e cores atuais serão substituídos). Continuar?'))return;
-  CFG.raio=raio;
-  var n=fs.length,D=[],i,j;
-  for(i=0;i<n;i++){D[i]=[];for(j=0;j<n;j++)D[i][j]=i===j?0:dist(fs[i].p.lat,fs[i].p.lng,fs[j].p.lat,fs[j].p.lng);}
-  var cl=fs.map(function(_,k){return [k];});
-  var lim=raio*2;
-  while(true){
-    var bi=-1,bj=-1,bd=Infinity;
-    for(i=0;i<cl.length;i++)for(j=i+1;j<cl.length;j++){
-      var mx=0;
-      for(var a=0;a<cl[i].length&&mx<=bd;a++)for(var b=0;b<cl[j].length;b++){var d=D[cl[i][a]][cl[j][b]];if(d>mx)mx=d;}
-      if(mx<bd){bd=mx;bi=i;bj=j;}
-    }
-    if(bi<0||bd>lim)break;
-    cl[bi]=cl[bi].concat(cl[bj]);cl.splice(bj,1);
-  }
-  cl.sort(function(a,b){return b.length-a.length;});
-  RG=[];var usados={};
-  cl.forEach(function(g,k){
-    var cont={};g.forEach(function(ix){var cid=(fs[ix].c.cidade||'').split(/[–-]/)[0].trim();if(cid)cont[cid]=(cont[cid]||0)+1;});
-    var cid=Object.keys(cont).sort(function(a,b){return cont[b]-cont[a];})[0]||'Região';
-    var lat=g.reduce(function(s,ix){return s+fs[ix].p.lat;},0)/g.length,lng=g.reduce(function(s,ix){return s+fs[ix].p.lng;},0)/g.length;
-    var nome=cid;if(usados[nome])nome=cid+' '+rumo(lat,lng);if(usados[nome])nome=nome+' '+(k+1);usados[nome]=1;
-    var id=k+1;RG.push({id:id,nome:nome,cor:CORES_RG[k%CORES_RG.length]});
-    g.forEach(function(ix){fs[ix].p.reg=id;});
-  });
-  save();renderRotas();renderMapMarkers();
-  toast('🧭 '+RG.length+' regiões criadas');
-}
-function openReg2(id){
-  var g=regById(id);if(!g)return;
-  document.getElementById('rg-id').value=id;
-  document.getElementById('rg-nome').value=g.nome;
-  document.getElementById('rg-cor').value=g.cor;
-  document.getElementById('rg-cores').innerHTML=CORES_RG.map(function(c){return '<button type="button" class="cor-b'+(c===g.cor?' on':'')+'" style="background:'+c+'" onclick="document.getElementById(\'rg-cor\').value=\''+c+'\';Array.prototype.forEach.call(document.querySelectorAll(\'#rg-cores .cor-b\'),function(b){b.classList.remove(\'on\');});this.classList.add(\'on\')"></button>';}).join('');
-  openDW('dw-reg');
-}
-function saveReg(){
-  var g=regById(parseInt(document.getElementById('rg-id').value));if(!g)return;
-  var n=document.getElementById('rg-nome').value.trim();if(!n){toast('⚠️ Dê um nome');return;}
-  g.nome=n;g.cor=document.getElementById('rg-cor').value||g.cor;
-  save();closeDW('dw-reg');renderRotas();renderMapMarkers();toast('✅ Região salva');
-}
-function delReg(){
-  var id=parseInt(document.getElementById('rg-id').value);
-  if(!confirm('Excluir a região? As fazendas dela ficam sem região.'))return;
-  RG=RG.filter(function(g){return g.id!==id;});
-  CL.forEach(function(c){farms(c).forEach(function(p){if(p.reg===id)p.reg=0;});});
-  save();closeDW('dw-reg');renderRotas();renderMapMarkers();toast('🗑 Região excluída');
-}
-function regStats(id){
-  var cs={},nf=0;
-  CL.forEach(function(c){farms(c).forEach(function(p){if((id===0&&!p.reg&&p.lat!=null)||(id&&p.reg===id)){nf++;cs[c.id]=c;}});});
-  var lst=Object.keys(cs).map(function(k){return cs[k];});
-  return {nf:nf,nc:lst.length,late:lst.filter(function(c){return stC(c)==='late';}).length,warn:lst.filter(function(c){return stC(c)==='warn';}).length};
-}
-
-// ── MAPA ──────────────────────────────────────────────────────────────────
-var mapInst=null,_rotaLayer=null,_mkLayer=null;
+var mapInst=null;
 function initMap(){
   if(mapInst)return;
-  if(window._noMap||typeof L==='undefined'){document.getElementById('map').innerHTML='<div style="padding:20px;text-align:center;color:var(--ink2);font-size:13px">Mapa requer conexão com internet.</div>';return;}
+  if(window._noMap){document.getElementById('map').innerHTML='<div style="padding:20px;text-align:center;color:var(--ink2);font-size:13px">Mapa requer conexão com internet.</div>';return;}
   try{
     mapInst=L.map('map',{zoomControl:true});
     addBaseLayers(mapInst);
-    _mkLayer=L.layerGroup().addTo(mapInst);
     setTimeout(function(){mapInst.invalidateSize();renderMapMarkers();},200);
   } catch(e){document.getElementById('map').innerHTML='<div style="padding:20px;text-align:center;color:var(--ink2);font-size:13px">Erro ao carregar mapa.</div>';}
 }
 function renderMapMarkers(){
-  if(!mapInst||!_mkLayer)return;
-  _mkLayer.clearLayers();
-  var pts=[[CAARAPO.lat,CAARAPO.lng]];
-  L.marker([CAARAPO.lat,CAARAPO.lng],{icon:L.divIcon({html:'<div style="background:#000;color:#fff;border-radius:8px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:15px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3)">🏠</div>',className:'',iconSize:[30,30],iconAnchor:[15,15]})}).addTo(_mkLayer).bindPopup('<strong>Base</strong><br>'+baseNome());
-  todasFazLoc().forEach(function(x){
-    var g=regById(x.p.reg);var cor=g?g.cor:'#737373';
-    var st=stC(x.c);var ring=st==='late'?'#DC2626':st==='warn'?'#F59E0B':'#fff';
-    var ic=L.divIcon({html:'<div style="background:'+cor+';color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;border:3px solid '+ring+';box-shadow:0 2px 6px rgba(0,0,0,.3)">'+x.c.pri+'</div>',className:'',iconSize:[28,28],iconAnchor:[14,14]});
-    L.marker([x.p.lat,x.p.lng],{icon:ic}).addTo(_mkLayer).bindPopup('<strong>'+x.c.nome+'</strong><br>'+x.p.nome+(x.p.area?' · '+x.p.area+' ha':'')+'<br>'+(g?g.nome:'Sem região')+' · '+({ok:'Em dia',warn:'Atenção',late:'Atrasado'})[st]+'<br><a href="#" onclick="goDet('+x.c.id+');return false">Abrir cliente ›</a>');
-    pts.push([x.p.lat,x.p.lng]);
+  if(!mapInst)return;
+  mapInst.eachLayer(function(l){if(l instanceof L.Marker||l instanceof L.Polyline)mapInst.removeLayer(l);});
+  var comLoc=CL.filter(function(c){return c.lat&&c.lng;});
+  if(!comLoc.length)return;
+  var cor={A:'#DC2626',B:'#D97706',C:'#64748B'};
+  comLoc.forEach(function(c){
+    var ic=L.divIcon({html:'<div style="background:'+cor[c.pri]+';color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3)">'+c.pri+'</div>',className:'',iconSize:[28,28],iconAnchor:[14,14]});
+    L.marker([c.lat,c.lng],{icon:ic}).addTo(mapInst).bindPopup('<strong>'+c.nome+'</strong><br>'+(c.prop||'')+(c.area?' · '+c.area+' ha':''));
   });
-  if(!_rotaLayer&&pts.length>1)mapInst.fitBounds(L.latLngBounds(pts),{padding:[20,20]});
-  else if(pts.length===1)mapInst.setView(pts[0],9);
+  mapInst.fitBounds(L.latLngBounds(comLoc.map(function(c){return[c.lat,c.lng];})),{padding:[20,20]});
 }
 function renderRotas(){
-  fillCfgBase();
-  var rl=document.getElementById('reg-list');
-  var semReg=regStats(0);
-  rl.innerHTML=(RG.length?RG.map(function(g){
-    var st=regStats(g.id);
-    return '<div class="li" onclick="openReg2('+g.id+')"><span class="reg-dot" style="background:'+g.cor+'"></span><div class="lm"><div class="ln">'+g.nome+'</div><div class="ls">'+st.nc+' cliente'+(st.nc!==1?'s':'')+' · '+st.nf+' fazenda'+(st.nf!==1?'s':'')+(st.late?' · <span style="color:var(--red);font-weight:700">'+st.late+' atrasados</span>':'')+(st.warn?' · <span style="color:var(--amber);font-weight:700">'+st.warn+' atenção</span>':'')+'</div></div><span class="chev">✏️</span></div>';
-  }).join(''):'<div style="padding:16px;font-size:13px;color:var(--ink2)">Nenhuma região ainda. Toque em <strong>⚙️ Gerar automático</strong> para agrupar as fazendas pela localização. Depois você pode renomear e trocar a região de qualquer fazenda no cadastro dela.</div>')
-  +(RG.length&&semReg.nf?'<div class="li" style="cursor:default"><span class="reg-dot" style="background:#737373"></span><div class="lm"><div class="ln">Sem região</div><div class="ls">'+semReg.nf+' fazenda'+(semReg.nf!==1?'s':'')+'</div></div></div>':'');
-  var sel=document.getElementById('rt-reg');var v=sel.value;
-  sel.innerHTML='<option value="">Todas as regiões</option>'+RG.map(function(g){return '<option value="'+g.id+'">'+g.nome+'</option>';}).join('');
-  sel.value=v;
-  if(!document.getElementById('rt-dt').value){var d=new Date();d.setDate(d.getDate()+1);document.getElementById('rt-dt').value=d.toISOString().slice(0,10);}
-  rtPreview();
-  var semLoc=CL.filter(function(c){return !farmsLoc(c).length;});
+  var semLoc=CL.filter(function(c){return !c.lat||!c.lng;});
   document.getElementById('sem-loc').innerHTML=semLoc.length
-    ?semLoc.map(function(c){return '<div class="li" onclick="goDet('+c.id+')"><div class="av '+c.pri+'">'+c.pri+'</div><div class="lm"><div class="ln">'+c.nome+'</div><div class="ls">'+(farms(c).length?'Fazenda sem localização — toque para editar':'Sem fazenda cadastrada')+'</div></div><span style="font-size:14px">✏️</span></div>';}).join('')
-    :'<div style="padding:16px;font-size:13px;color:var(--ink2)">✅ Todos os clientes têm fazenda localizada.</div>';
+    ?semLoc.map(function(c){return '<div class="li" onclick="openC('+c.id+')"><div class="av '+c.pri+'">'+c.pri+'</div><div class="lm"><div class="ln">'+c.nome+'</div><div class="ls">Toque para adicionar localização</div></div><span style="font-size:14px">✏️</span></div>';}).join('')
+    :'<div style="padding:16px;font-size:13px;color:var(--ink2)">✅ Todos os clientes têm localização.</div>';
 }
-// Candidatos do roteiro: 1 fazenda por cliente, ordenados por urgência
-function rtCandidatos(){
-  var rid=parseInt(document.getElementById('rt-reg').value)||0;
-  var quem=document.getElementById('rt-quem').value;
-  var max=Math.max(1,Math.min(9,parseInt(document.getElementById('rt-max').value)||6));
-  var r=[];
-  CL.forEach(function(c){
-    var st=stC(c);
-    if(quem==='late'&&st!=='late')return;
-    if(quem==='due'&&st==='ok')return;
-    var fs=farmsLoc(c).filter(function(p){return !rid||p.reg===rid;});
-    if(!fs.length)return;
-    r.push({c:c,p:fs[0],atraso:dD(c.uv)-(c.freq||30)});
-  });
-  var o={A:0,B:1,C:2};
-  r.sort(function(a,b){return o[a.c.pri]-o[b.c.pri]||b.atraso-a.atraso;});
-  return {lista:r.slice(0,max),total:r.length,max:max};
-}
-function rtPreview(){
-  var el=document.getElementById('rt-prev');if(!el)return;
-  var k=rtCandidatos();
-  el.innerHTML=k.total?('<strong>'+k.lista.length+'</strong> parada(s) no roteiro'+(k.total>k.lista.length?' (de '+k.total+' possíveis — entram os de prioridade A e mais atrasados primeiro)':'')+': '+k.lista.map(function(x){return x.c.nome.split(' ')[0];}).join(', ')):'Nenhum cliente nesse filtro.';
-}
-var _lastRota=null;
 function calcRota(){
-  var k=rtCandidatos();
-  if(!k.lista.length){toast('⚠️ Nenhum cliente com fazenda localizada nesse filtro');return;}
-  var res=document.getElementById('rota-result');
-  res.innerHTML='<div style="padding:16px;font-size:13px;color:var(--ink2);text-align:center">🛣️ Calculando melhor sequência pelas estradas…</div>';
-  var stops=k.lista;
-  var coords=[CAARAPO].concat(stops.map(function(x){return x.p;})).map(function(p){return p.lng+','+p.lat;}).join(';');
-  var offline=function(){
-    // sem internet: vizinho mais próximo em linha reta × 1,3
-    var rest=stops.slice(),cur=CAARAPO,ord=[],legs=[];
-    while(rest.length){var bi=0,bd=Infinity;rest.forEach(function(x,i){var d=dist(cur.lat,cur.lng,x.p.lat,x.p.lng);if(d<bd){bd=d;bi=i;}});ord.push(rest[bi]);legs.push(bd*1.3);cur=rest[bi].p;rest.splice(bi,1);}
-    legs.push(dist(cur.lat,cur.lng,CAARAPO.lat,CAARAPO.lng)*1.3);
-    showRota(ord,legs,legs.map(function(km){return km/70*60;}),null,false);
-  };
-  if(!navigator.onLine){offline();return;}
-  fetch(OSRM+'/trip/v1/driving/'+coords+'?source=first&roundtrip=true&overview=full&geometries=geojson')
-    .then(function(r){return r.json();})
-    .then(function(d){
-      if(!d||d.code!=='Ok'||!d.trips||!d.trips[0]){offline();return;}
-      var ord=[];
-      d.waypoints.forEach(function(w,i){if(i>0)ord[w.waypoint_index-1]=stops[i-1];});
-      var t=d.trips[0];
-      showRota(ord,t.legs.map(function(l){return l.distance/1000;}),t.legs.map(function(l){return l.duration/60;}),t.geometry,true);
-    })
-    .catch(offline);
-}
-function showRota(ord,legsKm,legsMin,geom,ok){
-  var tot=legsKm.reduce(function(s,x){return s+x;},0);
-  var min=legsMin.reduce(function(s,x){return s+x;},0);
-  var rg=regById(parseInt(document.getElementById('rt-reg').value)||0);
-  _lastRota={ord:ord,legsKm:legsKm,legsMin:legsMin,reg:rg?rg.nome:'Geral'};
-  if(mapInst){
-    if(_rotaLayer){mapInst.removeLayer(_rotaLayer);_rotaLayer=null;}
-    var ll=geom?geom.coordinates.map(function(c){return [c[1],c[0]];}):[[CAARAPO.lat,CAARAPO.lng]].concat(ord.map(function(x){return [x.p.lat,x.p.lng];})).concat([[CAARAPO.lat,CAARAPO.lng]]);
-    _rotaLayer=L.polyline(ll,{color:'#16A34A',weight:4,opacity:.85,dashArray:geom?null:'6,6'}).addTo(mapInst);
-    mapInst.fitBounds(_rotaLayer.getBounds(),{padding:[20,20]});
+  var comLoc=CL.filter(function(c){return c.lat&&c.lng;});
+  if(comLoc.length<2){toast('⚠️ Cadastre localização em pelo menos 2 clientes');return;}
+  var resto=comLoc.slice();
+  var priorA=resto.find(function(c){return c.pri==='A';});
+  var atual=priorA||resto[0];
+  var rota=[atual];
+  resto=resto.filter(function(c){return c.id!==atual.id;});
+  while(resto.length>0){
+    var md=Infinity;var prox=null;
+    resto.forEach(function(c){var d=dist(atual.lat,atual.lng,c.lat,c.lng);if(d<md){md=d;prox=c;}});
+    rota.push(prox);resto=resto.filter(function(c){return c.id!==prox.id;});atual=prox;
   }
-  var hh=function(m){var h=Math.floor(m/60),mm=Math.round(m%60);return h+'h'+(mm<10?'0':'')+mm;};
-  var rows=ord.map(function(x,i){
-    return '<div class="route-item"><div class="route-num">'+(i+1)+'</div><div class="route-info"><div style="font-size:13px;font-weight:700">'+x.c.nome+'</div><div style="font-size:11px;color:var(--ink2)">'+x.p.nome+' · '+chipSt(stC(x.c)).replace(/<[^>]+>/g,'')+'</div></div><div class="route-dist">'+fmtKm(legsKm[i],ok)+'</div></div>';
-  }).join('')+'<div class="route-item"><div class="route-num">🏠</div><div class="route-info"><div style="font-size:13px;font-weight:700">Volta para '+baseNome()+'</div></div><div class="route-dist">'+fmtKm(legsKm[legsKm.length-1],ok)+'</div></div>';
-  var b=CAARAPO.lat+','+CAARAPO.lng;
-  var gm='https://www.google.com/maps/dir/?api=1&origin='+b+'&destination='+b+'&travelmode=driving&waypoints='+ord.map(function(x){return x.p.lat+','+x.p.lng;}).join('|');
+  var totalKm=0;var trecho=[];
+  for(var i=0;i<rota.length-1;i++){var d=dist(rota[i].lat,rota[i].lng,rota[i+1].lat,rota[i+1].lng);totalKm+=d;trecho.push(d);}
+  var tempoH=(totalKm/80).toFixed(1);
+  if(mapInst){mapInst.eachLayer(function(l){if(l instanceof L.Polyline)mapInst.removeLayer(l);});L.polyline(rota.map(function(c){return[c.lat,c.lng];}),{color:'#1B3A2D',weight:3,opacity:.8,dashArray:'6,4'}).addTo(mapInst);}
+  var rotaRows=rota.map(function(c,i){
+    var distHtml=i<trecho.length?'<div class="route-dist">'+Math.round(trecho[i])+' km →</div>':'<div class="route-dist" style="color:var(--g5)">🏁</div>';
+    return '<div class="route-item"><div class="route-num">'+(i+1)+'</div><div class="route-info"><div style="font-size:13px;font-weight:700">'+c.nome+'</div><div style="font-size:11px;color:var(--ink2)">'+(c.prop||c.cidade)+(c.area?' · '+c.area+' ha':'')+'</div></div>'+distHtml+'</div>';
+  }).join('');
+  // Build Google Maps URL
+  var origin=rota[0].lat+','+rota[0].lng;
+  var dest=rota[rota.length-1].lat+','+rota[rota.length-1].lng;
+  var wps=rota.slice(1,-1).map(function(p){return p.lat+','+p.lng;}).join('|');
+  var gmUrl='https://www.google.com/maps/dir/?api=1&origin='+origin+'&destination='+dest+(wps?'&waypoints='+wps:'');
   document.getElementById('rota-result').innerHTML=
     '<div style="padding:14px 16px;background:var(--g1);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px">'+
-    '<div style="text-align:center"><div style="font-size:20px;font-weight:800;color:var(--g7)">'+(ok?'':'≈')+Math.round(tot)+'</div><div style="font-size:10px;color:var(--ink2)">km pela estrada</div></div>'+
-    '<div style="text-align:center"><div style="font-size:20px;font-weight:800;color:var(--gold)">'+hh(min)+'</div><div style="font-size:10px;color:var(--ink2)">dirigindo</div></div>'+
-    '<div style="text-align:center"><div style="font-size:20px;font-weight:800;color:var(--blue)">'+ord.length+'</div><div style="font-size:10px;color:var(--ink2)">paradas</div></div></div>'+
-    (ok?'':'<div style="padding:8px 16px;font-size:11px;color:var(--amber);font-weight:600">Sem internet: sequência e km estimados. Recalcule quando tiver sinal.</div>')+
-    rows+
-    '<div style="padding:12px 16px;display:flex;flex-direction:column;gap:8px"><a href="'+gm+'" target="_blank" class="btn btn-blue btn-full btn-sm">🗺️ Abrir no Google Maps</a>'+
-    '<button class="btn btn-p btn-full btn-sm" onclick="agendarRota()">📅 Agendar roteiro em '+fDFull(document.getElementById('rt-dt').value)+'</button></div>';
-}
-function agendarRota(){
-  if(!_lastRota)return;
-  var dt=document.getElementById('rt-dt').value;
-  if(!dt){toast('⚠️ Escolha a data do roteiro');return;}
-  var off=offOn(dt);
-  if(off&&off.per==='int'&&!confirm(fDFull(dt)+' está marcado como sem campo ('+motInfo(off.mot).n+'). Agendar mesmo assim?'))return;
-  var t=7*60+30; // sai às 07:30
-  var R=_lastRota,n=R.ord.length;
-  R.ord.forEach(function(x,i){
-    t+=R.legsMin[i];
-    var h=Math.floor(t/60),m=Math.round(t%60/5)*5;if(m===60){h++;m=0;}
-    var km=R.legsKm[i]+(i===n-1?R.legsKm[n]:0);
-    VS.push({id:nid(VS),cid:x.c.id,prop:x.p.nome,dt:dt,hr:(h<10?'0':'')+h+':'+(m<10?'0':'')+m,obj:'Roteiro '+R.reg+' ('+(i+1)+'/'+n+')',km:Math.round(km),dur:1.5,st:'pend'});
-    t+=90;
-  });
-  save();updateBadge();toast('📅 '+n+' visitas agendadas em '+fDFull(dt));
+    '<div style="text-align:center"><div style="font-size:20px;font-weight:800;color:var(--g7)">'+Math.round(totalKm)+'</div><div style="font-size:10px;color:var(--ink2)">km total</div></div>'+
+    '<div style="text-align:center"><div style="font-size:20px;font-weight:800;color:var(--gold)">'+tempoH+'h</div><div style="font-size:10px;color:var(--ink2)">tempo est.</div></div>'+
+    '<div style="text-align:center"><div style="font-size:20px;font-weight:800;color:var(--blue)">'+rota.length+'</div><div style="font-size:10px;color:var(--ink2)">paradas</div></div></div>'+
+    rotaRows+
+    '<div style="padding:12px 16px"><a href="'+gmUrl+'" target="_blank" class="btn btn-blue btn-full btn-sm">🗺️ Abrir no Google Maps</a></div>';
 }
 
 // ── MAIS ──────────────────────────────────────────────────────────────────
 function renderMais(){
-  updateBackupStatus();fillCfgBase();
+  updateBackupStatus();
   var tot=CL.length;var late=CL.filter(function(c){return stC(c)==='late';}).length;
   var real=HS.filter(function(h){return h.st==='realizada';}).length;
   var taxa=tot?Math.round((tot-late)/tot*100):0;
@@ -2523,25 +1936,19 @@ function renderMais(){
 }
 
 // ── EXPORT ────────────────────────────────────────────────────────────────
-function _rowsClientes(){
-  return CL.map(function(c){return{ID:c.id,Nome:c.nome,Cidade:c.cidade,Qtd_Fazendas:farms(c).length,Fazendas:farms(c).map(function(p){return p.nome;}).join('; '),Area_Total_ha:clientAreaTotal(c),Cultura:c.cult||'',Contato:c.contato||'',Telefone:c.tel||'',Prioridade:c.pri,Meta_Visita_Dias:c.freq,Ultima_Visita:c.uv||'',Proxima_Ate:proxVisita(c)||'',Status:stC(c),Obs:c.obs||''};});
-}
-function _rowsFazendas(){
-  var r=[];CL.forEach(function(c){farms(c).forEach(function(p){var g=regById(p.reg);var rc=p.lat!=null?roadCached(CAARAPO,p):null;r.push({id_cliente:c.id,Cliente:c.nome,Fazenda:p.nome,Regiao:g?g.nome:'',Localizacao:p.loc||'',Area_ha:p.area||0,Cultura:p.cult||'',Latitude:p.lat!=null?p.lat:'',Longitude:p.lng!=null?p.lng:'',Km_estrada_base:rc?rc.km:''});});});return r;
-}
-function _rowsHist(){return HS.map(function(h){var c=gC(h.cid);return{ID:h.id,id_cliente:h.cid,Data:h.dt,Cliente:c.nome||'',Fazenda:h.prop||'',Cidade:c.cidade||'',Prioridade:c.pri||'',Status:h.st,Km_rodados:h.km||0,Duracao_h:h.dur||0,Obs:h.obs||''};});}
-function _rowsOff(){return OF.slice().sort(function(a,b){return a.dt>b.dt?1:-1;}).map(function(o){return{Data:o.dt,Motivo:motInfo(o.mot).n,Periodo:PERS[o.per],Dias:o.per==='int'?1:0.5,Obs:o.obs||''};});}
 function expC(){
-  MX.dl([{n:'Clientes',d:_rowsClientes()},{n:'Fazendas',d:_rowsFazendas()}],'Clientes_AgroClientes.xlsx');
+  MX.dl([{n:'Clientes',d:CL.map(function(c){return{ID:c.id,Nome:c.nome,Propriedade:c.prop||'',Cidade:c.cidade,Loc_Fazenda:c.loc||'',Area_ha:c.area||0,Area_Total_ha:clientAreaTotal(c),Cultura:c.cult||'',Contato:c.contato||'',Telefone:c.tel||'',Prioridade:c.pri,Freq_Dias:c.freq,Ultima_Visita:c.uv||'',Status:stC(c),Latitude:c.lat||'',Longitude:c.lng||'',Obs:c.obs||''};})}],'Clientes_AgroClientes.xlsx');
   toast('📊 Exportado');
 }
 function expH(){
-  MX.dl([{n:'Historico',d:_rowsHist()},{n:'Dias_sem_campo',d:_rowsOff()}],'Historico_AgroClientes.xlsx');
+  MX.dl([{n:'Historico',d:HS.map(function(h){var c=gC(h.cid);return{ID:h.id,id_cliente:h.cid,Data:h.dt,Cliente:c.nome||'',Propriedade:h.prop||'',Cidade:c.cidade||'',Prioridade:c.pri||'',Status:h.st,Km_rodados:h.km||0,Duracao_h:h.dur||0,Obs:h.obs||''};})}],'Historico_AgroClientes.xlsx');
   toast('📋 Exportado');
 }
 function exportarTudo(){
-  var vd=VS.map(function(v){var c=gC(v.cid);return{ID:v.id,id_cliente:v.cid,Data:v.dt,Hora:v.hr,Cliente:c.nome||'',Fazenda:v.prop||'',Cidade:c.cidade||'',Prioridade:c.pri||'',Objetivo:v.obj||'',Km_est:v.km||0,Duracao_h:v.dur||0,Status:v.st};});
-  MX.dl([{n:'Clientes',d:_rowsClientes()},{n:'Fazendas',d:_rowsFazendas()},{n:'Agenda',d:vd},{n:'Historico',d:_rowsHist()},{n:'Dias_sem_campo',d:_rowsOff()}],'AgroClientes_Completo.xlsx');
+  var cd=CL.map(function(c){return{ID:c.id,Nome:c.nome,Propriedade:c.prop||'',Cidade:c.cidade,Loc_Fazenda:c.loc||'',Area_ha:c.area||0,Area_Total_ha:clientAreaTotal(c),Cultura:c.cult||'',Contato:c.contato||'',Telefone:c.tel||'',Prioridade:c.pri,Freq_Dias:c.freq,Ultima_Visita:c.uv||'',Status:stC(c),Latitude:c.lat||'',Longitude:c.lng||'',Obs:c.obs||''};});
+  var vd=VS.map(function(v){var c=gC(v.cid);return{ID:v.id,id_cliente:v.cid,Data:v.dt,Hora:v.hr,Cliente:c.nome||'',Propriedade:v.prop||'',Cidade:c.cidade||'',Prioridade:c.pri||'',Objetivo:v.obj||'',Km_est:v.km||0,Duracao_h:v.dur||0,Status:v.st};});
+  var hd=HS.map(function(h){var c=gC(h.cid);return{ID:h.id,id_cliente:h.cid,Data:h.dt,Cliente:c.nome||'',Propriedade:h.prop||'',Cidade:c.cidade||'',Prioridade:c.pri||'',Status:h.st,Km_rodados:h.km||0,Duracao_h:h.dur||0,Obs:h.obs||''};});
+  MX.dl([{n:'Clientes',d:cd},{n:'Agenda',d:vd},{n:'Historico',d:hd}],'AgroClientes_Completo.xlsx');
   toast('⬇️ Exportação completa!');
 }
 
@@ -2579,7 +1986,6 @@ if(navigator.userAgent.includes('iPhone')||navigator.userAgent.includes('iPad'))
 }
 
 // ── INIT ──────────────────────────────────────────────────────────────────
-document.getElementById('fab').style.display='none';
 renderHome();
 updateBadge();
 updateBackupStatus();
